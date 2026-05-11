@@ -63,18 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const words = text.split(' ');
     words.forEach((word, index) => {
       const span = document.createElement('span');
-      span.innerText = word + ' ';
       span.style.display = 'inline-block';
       span.style.overflow = 'hidden';
       
       const innerSpan = document.createElement('span');
-      innerSpan.innerText = word + ' ';
+      innerSpan.innerText = word;
       innerSpan.style.display = 'inline-block';
       innerSpan.style.transform = 'translateY(110%)';
       innerSpan.style.transition = `transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.05}s`;
       
       span.appendChild(innerSpan);
       el.appendChild(span);
+      el.appendChild(document.createTextNode(' '));
     });
 
     const wordObserver = new IntersectionObserver((entries) => {
@@ -135,11 +135,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. PARALLAX
   const parallaxImages = document.querySelectorAll('.parallax-img');
   window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
+    const windowHeight = window.innerHeight;
     parallaxImages.forEach(img => {
-      const speed = 0.6; // 60% speed
-      const offset = (scrolled - img.parentElement.offsetTop) * speed;
-      img.style.transform = `translateY(${offset}px)`;
+      const parent = img.parentElement;
+      const rect = parent.getBoundingClientRect();
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        const centerOffset = (rect.top + rect.height / 2) - (windowHeight / 2);
+        const speed = 0.15; // 15% speed relative to center
+        img.style.transform = `translateY(${centerOffset * speed}px)`;
+      }
     });
   });
 
