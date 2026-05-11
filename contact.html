@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | River Interior Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deep: '#050f12',
+                        surface: '#0a2028',
+                        raised: '#0f3040',
+                        elevated: '#1a4a60',
+                        teal: '#2a7a8f',
+                        glow: '#3fb8d4',
+                        shimmer: '#7de0f5',
+                        sand: '#f0e8d8',
+                        'sand-dim': '#c8b89a',
+                        'sand-muted': '#8a7a68',
+                        copper: '#b87333',
+                        'copper-bright': '#e09050',
+                        'copper-dim': '#7a4f22',
+                        border: 'rgba(63,184,212,0.12)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-deep text-sand">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo-mark"></div>
+            <a href="index.html" class="nav-title">RIVER</a>
+            <div class="nav-subtitle">INTERIOR DESIGN</div>
+        </div>
+        
+        <div class="nav-center hidden md:flex">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+        
+        <div class="nav-right hidden md:flex">
+            <a href="contact.html" class="btn-text-copper">FREE CONSULTATION &rarr;</a>
+        </div>
+
+        <div class="menu-toggle md:hidden">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="h-[40vh] bg-surface flex flex-col justify-end items-center text-center pb-12 mt-[68px]">
+        <div class="reveal">
+            <div class="clip-up-text clip-up">
+                <h1 class="font-display italic font-bold text-[clamp(48px,6vw,80px)] text-sand">Let's Design Your Space.</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPLIT LAYOUT CONTACT -->
+    <section class="bg-deep py-24 px-[5%]">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+            
+            <!-- LEFT: Information -->
+            <div class="w-full md:w-[45%] reveal">
+                <div class="inline-block border border-copper bg-[rgba(184,115,51,0.1)] px-5 py-2.5 mb-10 fade-up">
+                    <span class="font-ui text-[11px] text-copper uppercase tracking-wider font-semibold">Free Initial Consultation</span>
+                </div>
+                
+                <div class="space-y-10 fade-up" style="transition-delay: 0.1s">
+                    <div>
+                        <h4 class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase mb-3">Phone</h4>
+                        <a href="tel:+917904337156" class="font-display text-2xl md:text-3xl text-sand hover:text-glow transition-colors">+91 79043 37156</a>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase mb-3">Studio</h4>
+                        <address class="font-italic text-[18px] text-sand-dim not-italic leading-relaxed">
+                            5/7 B.R. Nagar, 4th St,<br>
+                            Singanallur, Coimbatore
+                        </address>
+                        <div class="font-ui text-[13px] text-sand-muted mt-2">Mon-Sat 10AM-7PM</div>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-border">
+                        <a href="https://wa.me/917904337156?text=Hi%20Divya,%20I%20found%20River%20Interior%20Design%20and%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="font-ui text-[13px] text-copper hover:text-copper-bright tracking-wider font-semibold transition-colors flex items-center gap-2 mb-6">
+                            Chat with Divya on WhatsApp &rarr;
+                        </a>
+                        
+                        <a href="#" class="font-ui text-[13px] text-teal hover:text-glow transition-colors">Instagram: @riverinteriordesign.in</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RIGHT: Form -->
+            <div class="w-full md:w-[55%] reveal">
+                <form action="#" method="POST" class="flex flex-col gap-8 fade-up" style="transition-delay: 0.2s">
+                    
+                    <div class="relative group">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required class="w-full bg-transparent border-b border-border text-sand font-ui text-[14px] py-4 placeholder-sand-muted/50 focus:outline-none focus:border-teal transition-colors rounded-none">
+                    </div>
+                    
+                    <div class="relative group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required class="w-full bg-transparent border-b border-border text-sand font-ui text-[14px] py-4 placeholder-sand-muted/50 focus:outline-none focus:border-teal transition-colors rounded-none">
+                    </div>
+                    
+                    <div class="relative group">
+                        <select id="project_type" name="project_type" required class="w-full bg-deep border-b border-border text-sand font-ui text-[14px] py-4 focus:outline-none focus:border-teal transition-colors rounded-none appearance-none cursor-pointer">
+                            <option value="" disabled selected hidden class="text-sand-muted/50">Project Type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial Office</option>
+                            <option value="restaurant">Restaurant / Cafe</option>
+                            <option value="modular">Modular Solutions (Kitchen/Wardrobe)</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-sand-muted">▼</div>
+                    </div>
+                    
+                    <div class="relative group">
+                        <select id="budget" name="budget" required class="w-full bg-deep border-b border-border text-sand font-ui text-[14px] py-4 focus:outline-none focus:border-teal transition-colors rounded-none appearance-none cursor-pointer">
+                            <option value="" disabled selected hidden class="text-sand-muted/50">Budget Range</option>
+                            <option value="5-10">₹5L - ₹10L</option>
+                            <option value="10-25">₹10L - ₹25L</option>
+                            <option value="25-50">₹25L - ₹50L</option>
+                            <option value="50+">₹50L+</option>
+                        </select>
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-sand-muted">▼</div>
+                    </div>
+                    
+                    <div class="relative group">
+                        <textarea id="description" name="description" rows="4" placeholder="Project Description (Tell us about your space)" class="w-full bg-transparent border-b border-border text-sand font-ui text-[14px] py-4 placeholder-sand-muted/50 focus:outline-none focus:border-teal transition-colors rounded-none resize-none"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full h-[56px] bg-copper text-white font-ui font-semibold text-[12px] uppercase tracking-[0.25em] transition-all duration-400 hover:bg-copper-bright hover:tracking-[0.4em] mt-4">
+                        Send Message
+                    </button>
+                    
+                </form>
+                
+                <div class="mt-12 text-center fade-up" style="transition-delay: 0.3s">
+                    <p class="font-ui text-[13px] text-sand-muted">Or walk into our studio:</p>
+                    <p class="font-ui text-[13px] text-sand-dim mt-1">5/7 B.R. Nagar, near Alvernia School, Singanallur</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="nav-logo-mark mb-6"></div>
+                <div class="font-display font-bold text-2xl text-glow mb-1">RIVER</div>
+                <div class="font-ui text-[8px] text-sand-muted tracking-[0.6em] mb-4 uppercase">INTERIOR DESIGN</div>
+                <p class="font-italic text-[13px] text-sand-muted">Spaces that flow. Perfectly.</p>
+            </div>
+            
+            <div>
+                <div class="footer-label">PAGES</div>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="work.html" class="footer-link">Work</a>
+                <a href="services.html" class="footer-link">Services</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            
+            <div>
+                <div class="footer-label">CONTACT</div>
+                <span class="footer-text">+91 79043 37156</span>
+                <span class="footer-text">5/7 B.R. Nagar, Singanallur</span>
+                <span class="footer-text">Coimbatore, Tamil Nadu</span>
+                <span class="footer-text">Mon-Sat: 10AM - 7PM</span>
+            </div>
+            
+            <div>
+                <div class="footer-label">SOCIAL</div>
+                <a href="#" class="footer-link footer-social">Instagram @riverinteriordesign.in</a>
+                <a href="#" class="footer-link footer-social">Facebook River Interior Design</a>
+                <a href="#" class="footer-link footer-social">WhatsApp Direct Link</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2024 River Interior Design, Coimbatore. Website by ElevateUX.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

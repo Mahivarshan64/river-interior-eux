@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Interior Design | Turnkey Interior Solutions, Coimbatore</title>
+    <meta name="description"
+        content="Award-winning turnkey interior solutions for residential, commercial, and restaurant spaces in Coimbatore, led by Divya.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind CSS included via CDN for layout utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deep: '#050f12',
+                        surface: '#0a2028',
+                        raised: '#0f3040',
+                        elevated: '#1a4a60',
+                        teal: '#2a7a8f',
+                        glow: '#3fb8d4',
+                        shimmer: '#7de0f5',
+                        sand: '#f0e8d8',
+                        'sand-dim': '#c8b89a',
+                        'sand-muted': '#8a7a68',
+                        copper: '#b87333',
+                        'copper-bright': '#e09050',
+                        'copper-dim': '#7a4f22',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Three.js for Hero Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body class="bg-deep text-sand">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo-mark"></div>
+            <a href="index.html" class="nav-title">RIVER</a>
+            <div class="nav-subtitle">INTERIOR DESIGN</div>
+        </div>
+
+        <div class="nav-center hidden md:flex">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-right hidden md:flex">
+            <a href="contact.html" class="btn-text-copper">FREE CONSULTATION &rarr;</a>
+        </div>
+
+        <div class="menu-toggle md:hidden">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative w-full h-screen min-h-[700px] overflow-hidden flex items-center pt-[68px] bg-deep">
+        <!-- 3D Canvas Background -->
+        <div id="canvas-container" class="absolute inset-0 w-full h-full pointer-events-none blur-[4px]"></div>
+
+        <div class="relative z-10 w-full max-w-5xl mx-auto px-4 flex flex-col items-center text-center mt-0">
+
+            <!-- Headline Wipe Reveal -->
+            <div class="clip-up-text clip-up mb-2">
+                <span
+                    class="font-display font-bold text-[clamp(64px,10vw,140px)] text-sand leading-[0.92] tracking-[-0.02em]">Spaces
+                    That</span>
+            </div>
+            <div class="clip-up-text clip-up mb-2">
+                <span
+                    class="font-display italic font-black text-[clamp(72px,12vw,160px)] text-glow leading-[0.92] tracking-[-0.02em]"
+                    style="transition-delay: 0.2s">Flow.</span>
+            </div>
+            <div class="clip-up-text clip-up mb-8">
+                <span
+                    class="font-display font-light text-[clamp(64px,10vw,140px)] text-sand-dim leading-[0.92] tracking-[-0.02em]"
+                    style="transition-delay: 0.4s">Perfectly.</span>
+            </div>
+
+            <!-- Decorative Line -->
+            <div class="reveal">
+                <div class="h-[1px] bg-copper w-0 mb-8 transition-all duration-[800ms] ease-in-out fade-up mx-auto"
+                    style="width: 80px; transition-delay: 0.9s"></div>
+            </div>
+
+            <!-- Subline -->
+            <div class="reveal">
+                <p class="font-italic text-[22px] text-sand-dim leading-[1.7] max-w-[600px] mx-auto mb-12 fade-up"
+                    style="transition-delay: 1.1s">
+                    Turn-key interior solutions for residential, commercial, and restaurant spaces. Every project
+                    personally led by Divya.
+                </p>
+            </div>
+
+            <!-- CTAs -->
+            <div class="reveal flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="contact.html" class="btn-primary fade-up" style="transition-delay: 1.4s">Start Your Project</a>
+                <a href="work.html" class="btn-outline fade-up" style="transition-delay: 1.5s">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE STRIP -->
+    <div class="marquee-container mt-12">
+        <div class="marquee-row">
+            <div class="marquee-content">
+                <span class="marquee-text">RESIDENTIAL &middot; COMMERCIAL &middot; RESTAURANT &middot; MODULAR &middot;
+                    TURNKEY &middot; COIMBATORE &middot;</span>
+                <span class="marquee-text">RESIDENTIAL &middot; COMMERCIAL &middot; RESTAURANT &middot; MODULAR &middot;
+                    TURNKEY &middot; COIMBATORE &middot;</span>
+            </div>
+        </div>
+        <div class="marquee-row reverse">
+            <div class="marquee-content">
+                <span class="marquee-text">4.7 RATING &middot; 50+ PROJECTS &middot; 5 YEARS &middot; DIVYA &middot;
+                    RIVER INTERIOR &middot;</span>
+                <span class="marquee-text">4.7 RATING &middot; 50+ PROJECTS &middot; 5 YEARS &middot; DIVYA &middot;
+                    RIVER INTERIOR &middot;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section class="bg-surface py-[140px] px-[5%]">
+        <div class="mb-12">
+            <span class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase">THE RIVER PHILOSOPHY</span>
+        </div>
+
+        <div class="max-w-5xl">
+            <h2 class="word-reveal font-display font-bold text-[clamp(40px,5vw,72px)] text-sand leading-[1.1] mb-2">We
+                believe every space has a soul.</h2>
+            <h2
+                class="word-reveal font-display italic font-light text-[clamp(40px,5vw,72px)] text-glow leading-[1.1] mb-12">
+                Our job is to find it.</h2>
+
+            <div class="reveal">
+                <p class="font-italic text-[18px] text-sand-dim leading-[1.8] max-w-[560px] fade-up">
+                    River Interior Design approaches every project as an act of translation — between how you think and
+                    how you live. Between aesthetic and function. Between what a space is and what it could become.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED WORK (3 Projects) -->
+    <section class="bg-deep pb-20">
+        <!-- Project 1 -->
+        <a href="work.html" class="block relative w-full h-[70vh] overflow-hidden group">
+            <div class="absolute inset-0 w-full h-[120%] -top-[10%]">
+                <img src="https://placehold.co/1400x800/0a2028/3fb8d4?text=The+Mehta+Residence"
+                    alt="The Mehta Residence"
+                    class="w-full h-full object-cover parallax-img transition-transform duration-[800ms] group-hover:scale-[1.04]">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(5,15,18,0.9)]"></div>
+            <!-- Hover Border -->
+            <div class="absolute top-0 left-0 h-full w-0 bg-copper transition-all duration-500 group-hover:w-1"></div>
+
+            <div class="absolute bottom-0 left-0 p-[60px] z-10">
+                <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-4">Residential</div>
+                <h3 class="font-display font-bold text-4xl md:text-5xl text-sand mb-2">The Mehta Residence</h3>
+                <div class="font-ui text-sm text-sand-dim mb-6">Coimbatore</div>
+                <div class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Project &rarr;</div>
+            </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="work.html" class="block relative w-full h-[70vh] overflow-hidden group">
+            <div class="absolute inset-0 w-full h-[120%] -top-[10%]">
+                <img src="https://placehold.co/1400x800/0a2028/3fb8d4?text=Brew+%26+Bean+Café" alt="Brew & Bean Café"
+                    class="w-full h-full object-cover parallax-img transition-transform duration-[800ms] group-hover:scale-[1.04]">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(5,15,18,0.9)]"></div>
+            <div class="absolute top-0 left-0 h-full w-0 bg-copper transition-all duration-500 group-hover:w-1"></div>
+
+            <div class="absolute bottom-0 left-0 p-[60px] z-10">
+                <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-4">Restaurant Design</div>
+                <h3 class="font-display font-bold text-4xl md:text-5xl text-sand mb-2">Brew & Bean Café</h3>
+                <div class="font-ui text-sm text-sand-dim mb-6">Coimbatore</div>
+                <div class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Project &rarr;</div>
+            </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="work.html" class="block relative w-full h-[70vh] overflow-hidden group">
+            <div class="absolute inset-0 w-full h-[120%] -top-[10%]">
+                <img src="https://placehold.co/1400x800/0a2028/3fb8d4?text=Nexus+Workspace" alt="Nexus Workspace"
+                    class="w-full h-full object-cover parallax-img transition-transform duration-[800ms] group-hover:scale-[1.04]">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(5,15,18,0.9)]"></div>
+            <div class="absolute top-0 left-0 h-full w-0 bg-copper transition-all duration-500 group-hover:w-1"></div>
+
+            <div class="absolute bottom-0 left-0 p-[60px] z-10">
+                <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-4">Commercial Office</div>
+                <h3 class="font-display font-bold text-4xl md:text-5xl text-sand mb-2">Nexus Workspace</h3>
+                <div class="font-ui text-sm text-sand-dim mb-6">Coimbatore</div>
+                <div class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Project &rarr;</div>
+            </div>
+        </a>
+
+        <div class="text-center pt-16">
+            <a href="work.html"
+                class="font-ui text-[12px] text-copper tracking-[0.3em] uppercase hover:text-copper-bright transition-colors">See
+                all projects &rarr;</a>
+        </div>
+    </section>
+
+    <!-- DIVYA INTRO -->
+    <section class="bg-raised py-[120px] px-[5%] overflow-hidden">
+        <div class="flex flex-col md:flex-row max-w-7xl mx-auto">
+            <!-- Left -->
+            <div class="w-full md:w-[35%] relative mb-16 md:mb-0">
+                <div
+                    class="font-display font-black text-[120px] text-teal opacity-5 absolute -left-5 top-1/2 -translate-y-1/2 rotate-90 origin-center select-none pointer-events-none">
+                    DIVYA</div>
+                <div class="relative z-10 md:-mr-8 border-l-[3px] border-copper bg-deep">
+                    <img src="https://placehold.co/480x600/0f3040/3fb8d4?text=Divya" alt="Divya, Lead Designer"
+                        class="w-full h-auto">
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="w-full md:w-[65%] md:pl-[60px] flex flex-col justify-center reveal">
+                <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-6 fade-up">LEAD DESIGNER</div>
+                <h2 class="font-display italic font-bold text-[clamp(32px,4vw,52px)] text-sand leading-[1.2] mb-8 fade-up"
+                    style="transition-delay: 0.1s">"Design is a conversation, not a prescription."</h2>
+                <div class="w-20 h-[1px] bg-copper mb-8 fade-up" style="transition-delay: 0.2s"></div>
+                <p class="font-italic text-[17px] text-sand-dim leading-[1.8] mb-12 fade-up"
+                    style="transition-delay: 0.3s">
+                    Divya founded River Interior Design with one belief: clients shouldn't have to choose between
+                    beautiful and functional. She personally leads every project from consultation to handover.
+                </p>
+
+                <div class="flex gap-16 mb-12 fade-up stats-section" style="transition-delay: 0.4s">
+                    <div>
+                        <div class="font-display font-bold text-5xl text-glow mb-2 counter-val" data-target="50">49+
+                        </div>
+                        <div class="font-ui text-[11px] text-sand-muted tracking-widest uppercase">Projects</div>
+                    </div>
+                    <div>
+                        <div class="font-display font-bold text-5xl text-glow mb-2 counter-val" data-target="4.7">4.7★
+                        </div>
+                        <div class="font-ui text-[11px] text-sand-muted tracking-widest uppercase">Rating</div>
+                    </div>
+                </div>
+
+                <a href="about.html" class="btn-text-copper self-start fade-up" style="transition-delay: 0.5s">Meet
+                    Divya &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="bg-surface py-[120px] px-[5%]">
+        <div class="reveal">
+            <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-4 fade-up">WHAT WE DESIGN</div>
+            <h2 class="font-display font-bold text-[clamp(40px,5vw,64px)] text-sand fade-up"
+                style="transition-delay: 0.1s">Every Space. Every Scale.</h2>
+        </div>
+
+        <div class="accordion-container">
+            <!-- 01 -->
+            <a href="services.html" class="accordion-item"
+                style="background-image: url('https://placehold.co/600x500/0f3040/3fb8d4?text=Residential');">
+                <div class="accordion-default">
+                    <span class="accordion-number">01</span>
+                </div>
+                <div class="accordion-content">
+                    <h3 class="accordion-title">Residential</h3>
+                    <p class="accordion-desc">Spaces that feel like home — because they are.</p>
+                    <span class="font-ui text-[11px] text-copper tracking-[0.2em] uppercase">Explore &rarr;</span>
+                </div>
+            </a>
+
+            <!-- 02 -->
+            <a href="services.html" class="accordion-item"
+                style="background-image: url('https://placehold.co/600x500/0f3040/3fb8d4?text=Commercial');">
+                <div class="accordion-default">
+                    <span class="accordion-number">02</span>
+                </div>
+                <div class="accordion-content">
+                    <h3 class="accordion-title">Commercial</h3>
+                    <p class="accordion-desc">Your brand, made spatial. Function-first workspaces.</p>
+                    <span class="font-ui text-[11px] text-copper tracking-[0.2em] uppercase">Explore &rarr;</span>
+                </div>
+            </a>
+
+            <!-- 03 -->
+            <a href="services.html" class="accordion-item"
+                style="background-image: url('https://placehold.co/600x500/0f3040/3fb8d4?text=Restaurant');">
+                <div class="accordion-default">
+                    <span class="accordion-number">03</span>
+                </div>
+                <div class="accordion-content">
+                    <h3 class="accordion-title">Restaurant</h3>
+                    <p class="accordion-desc">Hospitality begins before the food arrives.</p>
+                    <span class="font-ui text-[11px] text-copper tracking-[0.2em] uppercase">Explore &rarr;</span>
+                </div>
+            </a>
+
+            <!-- 04 -->
+            <a href="services.html" class="accordion-item"
+                style="background-image: url('https://placehold.co/600x500/0f3040/3fb8d4?text=Modular');">
+                <div class="accordion-default">
+                    <span class="accordion-number">04</span>
+                </div>
+                <div class="accordion-content">
+                    <h3 class="accordion-title">Modular</h3>
+                    <p class="accordion-desc">Precision engineering meets personal taste.</p>
+                    <span class="font-ui text-[11px] text-copper tracking-[0.2em] uppercase">Explore &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- STATS COUNTER -->
+    <section class="bg-deep py-[100px] px-[5%] reveal stats-section">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center text-center gap-8">
+            <div class="fade-up" style="transition-delay: 0.1s;">
+                <div class="font-display font-black text-6xl md:text-[80px] text-glow mb-4 counter-val"
+                    data-target="4.7">0.0★</div>
+                <div class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase">Rating</div>
+            </div>
+
+            <div class="transform -translate-y-8 fade-up" style="transition-delay: 0.2s;">
+                <div class="font-display font-black text-6xl md:text-[80px] text-glow mb-4 counter-val"
+                    data-target="50">0+</div>
+                <div class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase">Projects</div>
+            </div>
+
+            <div class="transform translate-y-8 fade-up" style="transition-delay: 0.3s;">
+                <div class="font-display font-black text-6xl md:text-[80px] text-glow mb-4 counter-val" data-target="5">
+                    0 Years</div>
+                <div class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase">Experience</div>
+            </div>
+
+            <div class="transform -translate-y-4 fade-up" style="transition-delay: 0.4s;">
+                <div class="font-display font-black text-6xl md:text-[80px] text-glow mb-4 counter-val"
+                    data-target="100">0%</div>
+                <div class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase">Commitment</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="bg-raised py-[120px] px-[5%] relative overflow-hidden flex flex-col items-center text-center">
+        <!-- Subtle Animated Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-raised via-surface to-teal opacity-10 animate-[gradient_30s_ease_infinite]"
+            style="background-size: 400% 400%;"></div>
+
+        <div
+            class="font-display font-black text-[200px] text-teal opacity-[0.06] absolute top-10 left-[10%] leading-none pointer-events-none">
+            "</div>
+
+        <div class="relative z-10 max-w-[800px] mx-auto reveal">
+            <p
+                class="font-display italic font-normal text-[clamp(22px,2.5vw,36px)] text-sand leading-[1.5] mb-12 fade-up">
+                "Divya understood our vision completely. The material quality, the attention to detail, the way she
+                translated our ideas — our home feels like us, finally."
+            </p>
+
+            <div class="w-[60px] h-[1px] bg-copper mx-auto mb-6 fade-up" style="transition-delay: 0.2s"></div>
+
+            <div class="font-ui font-semibold text-[13px] text-sand tracking-[0.1em] mb-2 fade-up"
+                style="transition-delay: 0.3s">Ramesh & Priya K.</div>
+            <div class="font-ui text-[11px] text-sand-muted fade-up" style="transition-delay: 0.4s">Residential Project
+                &middot; Coimbatore 2024</div>
+            <div class="text-copper mt-4 tracking-[0.2em] fade-up" style="transition-delay: 0.5s">★★★★<span
+                    class="text-sand-muted">★</span></div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="relative bg-deep h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden">
+        <!-- Particles container -->
+        <div id="particles" class="absolute inset-0 pointer-events-none opacity-40"></div>
+
+        <div class="relative z-10 reveal">
+            <div class="font-ui text-[10px] text-copper tracking-[0.5em] uppercase mb-6 fade-up">LET'S BEGIN</div>
+            <h2 class="font-display italic font-bold text-[clamp(48px,6vw,96px)] text-sand mb-12 fade-up"
+                style="transition-delay: 0.1s">Your space is waiting.</h2>
+
+            <div class="flex flex-col items-center gap-6 fade-up" style="transition-delay: 0.2s">
+                <a href="contact.html" class="btn-primary">Book Free Consultation</a>
+                <a href="contact.html"
+                    class="font-ui text-[11px] text-copper hover:text-copper-bright tracking-widest uppercase transition-colors">WhatsApp
+                    Divya &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="nav-logo-mark mb-6"></div>
+                <div class="font-display font-bold text-2xl text-glow mb-1">RIVER</div>
+                <div class="font-ui text-[8px] text-sand-muted tracking-[0.6em] mb-4 uppercase">INTERIOR DESIGN</div>
+                <p class="font-italic text-[13px] text-sand-muted">Spaces that flow. Perfectly.</p>
+            </div>
+
+            <div>
+                <div class="footer-label">PAGES</div>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="work.html" class="footer-link">Work</a>
+                <a href="services.html" class="footer-link">Services</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+
+            <div>
+                <div class="footer-label">CONTACT</div>
+                <span class="footer-text">+91 79043 37156</span>
+                <span class="footer-text">5/7 B.R. Nagar, Singanallur</span>
+                <span class="footer-text">Coimbatore, Tamil Nadu</span>
+                <span class="footer-text">Mon-Sat: 10AM - 7PM</span>
+            </div>
+
+            <div>
+                <div class="footer-label">SOCIAL</div>
+                <a href="#" class="footer-link footer-social">Instagram @riverinteriordesign.in</a>
+                <a href="#" class="footer-link footer-social">Facebook River Interior Design</a>
+                <a href="#" class="footer-link footer-social">WhatsApp Direct Link</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 River Interior Design, Coimbatore. Website by ElevateUX.
+        </div>
+    </footer>
+
+    <!-- Three.js Setup & Additional inline JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Three.js Hero Canvas Background (Sine Wave Flow)
+            const initThreeJS = () => {
+                const container = document.getElementById('canvas-container');
+                if (!container || typeof THREE === 'undefined') return;
+
+                const scene = new THREE.Scene();
+                const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
+                const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+
+                renderer.setSize(container.clientWidth, container.clientHeight);
+                container.appendChild(renderer.domElement);
+
+                // Create flowing ribbon
+                const geometry = new THREE.PlaneGeometry(10, 20, 30, 30);
+                const material = new THREE.MeshPhongMaterial({
+                    color: 0x2a7a8f,
+                    wireframe: true,
+                    transparent: true,
+                    opacity: 0.15
+                });
+
+                const ribbon = new THREE.Mesh(geometry, material);
+                ribbon.rotation.x = -Math.PI / 3;
+                scene.add(ribbon);
+
+                // Lighting
+                const ambientLight = new THREE.AmbientLight(0x3fb8d4, 0.5);
+                scene.add(ambientLight);
+
+                const dirLight = new THREE.DirectionalLight(0xb87333, 0.8);
+                dirLight.position.set(5, 5, 5);
+                scene.add(dirLight);
+
+                camera.position.z = 5;
+
+                // Animation
+                let time = 0;
+                const animate = function () {
+                    requestAnimationFrame(animate);
+
+                    time += 0.015;
+                    const positions = geometry.attributes.position;
+
+                    for (let i = 0; i < positions.count; i++) {
+                        const x = positions.getX(i);
+                        const y = positions.getY(i);
+                        // Sinusoidal wave pattern
+                        const z = Math.sin(x * 1.5 + time) * 0.5 + Math.cos(y * 1.5 + time) * 0.5;
+                        positions.setZ(i, z);
+                    }
+                    geometry.attributes.position.needsUpdate = true;
+
+                    ribbon.rotation.y += 0.0003;
+
+                    renderer.render(scene, camera);
+                };
+
+                animate();
+
+                // Handle resize
+                window.addEventListener('resize', () => {
+                    camera.aspect = container.clientWidth / container.clientHeight;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize(container.clientWidth, container.clientHeight);
+                });
+            };
+
+            initThreeJS();
+
+            // Simple CSS/JS Particles for CTA Section
+            const initParticles = () => {
+                const container = document.getElementById('particles');
+                if (!container) return;
+
+                const particleCount = 50;
+                for (let i = 0; i < particleCount; i++) {
+                    const p = document.createElement('div');
+                    p.style.position = 'absolute';
+                    p.style.width = '2px';
+                    p.style.height = '2px';
+                    p.style.backgroundColor = '#3fb8d4';
+                    p.style.borderRadius = '50%';
+                    p.style.left = Math.random() * 100 + '%';
+                    p.style.bottom = '-10px';
+                    p.style.opacity = Math.random() * 0.5 + 0.2;
+
+                    const duration = Math.random() * 5 + 5;
+                    const delay = Math.random() * 5;
+
+                    p.style.animation = `rise ${duration}s linear ${delay}s infinite`;
+                    container.appendChild(p);
+                }
+
+                // Add keyframes dynamically
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    @keyframes pulseDown {
+                        0% { transform: translateY(-100%); }
+                        50% { transform: translateY(100%); }
+                        100% { transform: translateY(100%); }
+                    }
+                    @keyframes gradient {
+                        0% { background-position: 0% 50%; }
+                        50% { background-position: 100% 50%; }
+                        100% { background-position: 0% 50%; }
+                    }
+                    @keyframes rise {
+                        0% { transform: translateY(0); opacity: 0; }
+                        10% { opacity: 0.5; }
+                        90% { opacity: 0.5; }
+                        100% { transform: translateY(-60vh); opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+            };
+
+            initParticles();
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

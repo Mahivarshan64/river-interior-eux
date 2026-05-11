@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | River Interior Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deep: '#050f12',
+                        surface: '#0a2028',
+                        raised: '#0f3040',
+                        elevated: '#1a4a60',
+                        teal: '#2a7a8f',
+                        glow: '#3fb8d4',
+                        shimmer: '#7de0f5',
+                        sand: '#f0e8d8',
+                        'sand-dim': '#c8b89a',
+                        'sand-muted': '#8a7a68',
+                        copper: '#b87333',
+                        'copper-bright': '#e09050',
+                        'copper-dim': '#7a4f22',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-deep text-sand">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo-mark"></div>
+            <a href="index.html" class="nav-title">RIVER</a>
+            <div class="nav-subtitle">INTERIOR DESIGN</div>
+        </div>
+        
+        <div class="nav-center hidden md:flex">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work.html" class="nav-link active">Work</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        
+        <div class="nav-right hidden md:flex">
+            <a href="contact.html" class="btn-text-copper">FREE CONSULTATION &rarr;</a>
+        </div>
+
+        <div class="menu-toggle md:hidden">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link active">Work</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="h-[50vh] bg-surface flex flex-col justify-center items-center text-center mt-[68px]">
+        <div class="reveal">
+            <div class="font-ui text-[10px] text-copper tracking-[0.5em] uppercase mb-4 fade-up">OUR PORTFOLIO</div>
+            <div class="clip-up-text clip-up">
+                <h1 class="font-display font-bold text-[clamp(48px,6vw,80px)] text-sand">Spaces We've Shaped</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="sticky top-[68px] z-50 bg-deep/95 backdrop-blur py-4 border-b border-border">
+        <div class="max-w-7xl mx-auto px-[5%] flex flex-wrap justify-center gap-6">
+            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-copper border-b border-copper active pb-1 transition-colors" data-filter="all">All</button>
+            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="residential">Residential</button>
+            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="commercial">Commercial</button>
+            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="restaurant">Restaurant</button>
+            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="modular">Modular</button>
+        </div>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <section class="py-20 px-[5%]">
+        <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8" id="portfolio-grid">
+            
+            <!-- Project 1 (Large, spans 2 cols) -->
+            <div class="project-card md:col-span-2 relative overflow-hidden group h-[600px] bg-raised transition-all duration-500 origin-center" data-category="residential">
+                <img src="https://placehold.co/1200x600/0f3040/3fb8d4?text=The+Mehta+Residence" alt="The Mehta Residence" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Residential</div>
+                    <h3 class="font-display font-bold text-4xl text-sand mb-4">The Mehta Residence</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 2 (Medium) -->
+            <div class="project-card relative overflow-hidden group h-[500px] bg-raised transition-all duration-500 origin-center" data-category="restaurant">
+                <img src="https://placehold.co/600x500/0f3040/3fb8d4?text=Brew+%26+Bean+Café" alt="Brew & Bean Café" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Restaurant</div>
+                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Brew & Bean Café</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 3 (Small) -->
+            <div class="project-card relative overflow-hidden group h-[400px] md:mt-24 bg-raised transition-all duration-500 origin-center" data-category="commercial">
+                <img src="https://placehold.co/600x400/0f3040/3fb8d4?text=Nexus+Workspace" alt="Nexus Workspace" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Commercial</div>
+                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Nexus Workspace</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 4 (Medium) -->
+            <div class="project-card relative overflow-hidden group h-[500px] bg-raised transition-all duration-500 origin-center" data-category="modular">
+                <img src="https://placehold.co/600x500/0f3040/3fb8d4?text=The+Silva+Kitchen" alt="The Silva Kitchen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Modular</div>
+                    <h3 class="font-display font-bold text-3xl text-sand mb-4">The Silva Kitchen</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 5 (Medium) -->
+            <div class="project-card relative overflow-hidden group h-[500px] md:-mt-24 bg-raised transition-all duration-500 origin-center" data-category="residential">
+                <img src="https://placehold.co/600x500/0f3040/3fb8d4?text=Green+Villa" alt="Green Villa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Residential</div>
+                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Green Villa</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 6 (Large, spans 2 cols) -->
+            <div class="project-card md:col-span-2 relative overflow-hidden group h-[600px] bg-raised transition-all duration-500 origin-center" data-category="commercial">
+                <img src="https://placehold.co/1200x600/0f3040/3fb8d4?text=The+Loft+Office" alt="The Loft Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Commercial</div>
+                    <h3 class="font-display font-bold text-4xl text-sand mb-4">The Loft Office</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 7 (Small) -->
+            <div class="project-card relative overflow-hidden group h-[400px] bg-raised transition-all duration-500 origin-center" data-category="restaurant">
+                <img src="https://placehold.co/600x400/0f3040/3fb8d4?text=Spice+Garden" alt="Spice Garden" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Restaurant</div>
+                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Spice Garden</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 8 (Medium) -->
+            <div class="project-card relative overflow-hidden group h-[500px] bg-raised transition-all duration-500 origin-center" data-category="modular">
+                <img src="https://placehold.co/600x500/0f3040/3fb8d4?text=Modern+Wardrobe" alt="Modern Wardrobe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
+                    <div class="font-ui text-[10px] text-copper tracking-[0.4em] uppercase mb-2">Modular</div>
+                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Modern Wardrobe</h3>
+                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="py-24 text-center">
+        <h2 class="font-display italic text-3xl text-sand mb-6">Ready to start your project?</h2>
+        <a href="contact.html" class="font-ui text-xs text-copper tracking-[0.2em] uppercase border-b border-copper pb-1 hover:text-copper-bright hover:border-copper-bright transition-colors">Book a free consultation &rarr;</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="nav-logo-mark mb-6"></div>
+                <div class="font-display font-bold text-2xl text-glow mb-1">RIVER</div>
+                <div class="font-ui text-[8px] text-sand-muted tracking-[0.6em] mb-4 uppercase">INTERIOR DESIGN</div>
+                <p class="font-italic text-[13px] text-sand-muted">Spaces that flow. Perfectly.</p>
+            </div>
+            
+            <div>
+                <div class="footer-label">PAGES</div>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="work.html" class="footer-link">Work</a>
+                <a href="services.html" class="footer-link">Services</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            
+            <div>
+                <div class="footer-label">CONTACT</div>
+                <span class="footer-text">+91 79043 37156</span>
+                <span class="footer-text">5/7 B.R. Nagar, Singanallur</span>
+                <span class="footer-text">Coimbatore, Tamil Nadu</span>
+                <span class="footer-text">Mon-Sat: 10AM - 7PM</span>
+            </div>
+            
+            <div>
+                <div class="footer-label">SOCIAL</div>
+                <a href="#" class="footer-link footer-social">Instagram @riverinteriordesign.in</a>
+                <a href="#" class="footer-link footer-social">Facebook River Interior Design</a>
+                <a href="#" class="footer-link footer-social">WhatsApp Direct Link</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2024 River Interior Design, Coimbatore. Website by ElevateUX.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
