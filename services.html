@@ -1,223 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Nithish Interior</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        deep: '#0D1525',
-                        surface: '#152038',
-                        raised: '#1E2F4D',
-                        elevated: '#2A3F62',
-                        teal: '#6B7BA4',
-                        glow: '#8A9CC4',
-                        shimmer: '#B0BDD8',
-                        sand: '#EDE0BC',
-                        'sand-dim': '#DEBB7A',
-                        'sand-muted': '#A89060',
-                        copper: '#C8904A',
-                        'copper-bright': '#DDA060',
-                        'copper-dim': '#9A6830',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Blue Homes Interiors, Chennai</title>
+  <meta name="description" content="Modular kitchens, full 2BHK/3BHK/4BHK interiors, false ceilings, wardrobes, custom units and commercial fit-outs. Factory-made, fixed quotes, on-time handover.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { copper: '#C9952C', ink: '#0D1B26', brand: '#2E7D9E' } } } }
+  </script>
 </head>
-<body class="bg-deep text-sand">
+<body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <div class="nav-logo-mark"></div>
-            <a href="index.html" class="nav-title">NITHISH</a>
-            <div class="nav-subtitle">INTERIOR</div>
-        </div>
-        
-        <div class="nav-center hidden md:flex">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="work.html" class="nav-link">Work</a>
-            <a href="services.html" class="nav-link active">Services</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-        
-        <div class="nav-right hidden md:flex">
-            <a href="contact.html" class="btn-text-copper">FREE CONSULTATION &rarr;</a>
-        </div>
+<!-- ─── NAV ─────────────────────────────────────────────────── -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 10.5L12 3L21 10.5V20C21 20.55 20.55 21 20 21H15V15.5C15 15.22 14.78 15 14.5 15H9.5C9.22 15 9 15.22 9 15.5V21H4C3.45 21 3 20.55 3 20V10.5Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="nav-brand-words">
+      <span class="nav-brand-name">Blue Homes</span>
+      <span class="nav-brand-sub">Interiors</span>
+    </div>
+  </a>
+  <div class="nav-center hidden md:flex">
+    <a href="index.html"    class="nav-link">Home</a>
+    <a href="services.html" class="nav-link active">Services</a>
+    <a href="work.html"     class="nav-link">Portfolio</a>
+    <a href="about.html"    class="nav-link">About</a>
+    <a href="contact.html"  class="nav-link">Contact</a>
+  </div>
+  <div class="nav-right hidden md:flex">
+    <a href="contact.html" class="btn-text-copper">Book a Consultation</a>
+  </div>
+  <div class="menu-toggle md:hidden"><span></span><span></span><span></span></div>
+</nav>
 
-        <div class="menu-toggle md:hidden">
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link">Home</a>
+  <a href="services.html" class="nav-link active">Services</a>
+  <a href="work.html"     class="nav-link">Portfolio</a>
+  <a href="about.html"    class="nav-link">About</a>
+  <a href="contact.html"  class="nav-link">Contact</a>
+  <a href="contact.html"  class="btn-primary mt-6">Book a Consultation</a>
+</div>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="work.html" class="nav-link">Work</a>
-        <a href="services.html" class="nav-link active">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+<!-- ─── HERO: typographic + service index ───────────────────── -->
+<header class="reveal" style="background:var(--paper);padding:calc(72px + clamp(56px,9vh,110px)) clamp(20px,5vw,64px) clamp(56px,8vh,96px)">
+  <div style="max-width:1320px;margin:0 auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-12">
+
+      <div class="lg:col-span-7">
+        <div class="titleblock fade-up">
+          <span class="tb-num">Services</span><span class="tb-rule"></span><span class="tb-label">What We Build</span>
+        </div>
+        <div class="clip-up-text">
+          <h1 class="display">Everything your home needs. One roof.</h1>
+        </div>
+        <p class="lead fade-up" style="margin-top:26px;transition-delay:0.15s">
+          Five services, one in-house team, one handover date. Every project starts with a free site visit and a full 3D preview, and ends with a fixed quote kept to the rupee.
+        </p>
+      </div>
+
+      <!-- Service index (drawing-sheet style) -->
+      <nav class="lg:col-span-5 fade-up" style="transition-delay:0.2s;align-self:end" aria-label="Service index">
+        <a href="#kitchens" style="display:flex;align-items:baseline;gap:18px;padding:15px 2px;border-top:1px solid var(--line);transition:background 0.2s ease" class="hover:bg-white">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--blue)">01</span>
+          <span style="font-family:var(--font-h);font-weight:650;font-size:17px;color:var(--text);flex:1">Modular Kitchens</span>
+          <span style="color:var(--text-2);font-size:14px">&darr;</span>
+        </a>
+        <a href="#homes" style="display:flex;align-items:baseline;gap:18px;padding:15px 2px;border-top:1px solid var(--line);transition:background 0.2s ease" class="hover:bg-white">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--blue)">02</span>
+          <span style="font-family:var(--font-h);font-weight:650;font-size:17px;color:var(--text);flex:1">Full Home Interiors</span>
+          <span style="color:var(--text-2);font-size:14px">&darr;</span>
+        </a>
+        <a href="#ceilings" style="display:flex;align-items:baseline;gap:18px;padding:15px 2px;border-top:1px solid var(--line);transition:background 0.2s ease" class="hover:bg-white">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--blue)">03</span>
+          <span style="font-family:var(--font-h);font-weight:650;font-size:17px;color:var(--text);flex:1">False Ceilings</span>
+          <span style="color:var(--text-2);font-size:14px">&darr;</span>
+        </a>
+        <a href="#custom" style="display:flex;align-items:baseline;gap:18px;padding:15px 2px;border-top:1px solid var(--line);transition:background 0.2s ease" class="hover:bg-white">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--blue)">04</span>
+          <span style="font-family:var(--font-h);font-weight:650;font-size:17px;color:var(--text);flex:1">Wardrobes &amp; Custom Units</span>
+          <span style="color:var(--text-2);font-size:14px">&darr;</span>
+        </a>
+        <a href="#commercial" style="display:flex;align-items:baseline;gap:18px;padding:15px 2px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);transition:background 0.2s ease" class="hover:bg-white">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--blue)">05</span>
+          <span style="font-family:var(--font-h);font-weight:650;font-size:17px;color:var(--text);flex:1">Commercial Spaces</span>
+          <span style="color:var(--text-2);font-size:14px">&darr;</span>
+        </a>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<!-- ─── 01 · MODULAR KITCHENS ────────────────────────────────── -->
+<section class="svc-row reveal" id="kitchens">
+  <div class="svc-img fade-up">
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85"
+         alt="Modular kitchen with handle-less shutters and a quartz worktop">
+  </div>
+  <div class="svc-body">
+    <div class="titleblock fade-up">
+      <span class="tb-num">01</span><span class="tb-rule"></span><span class="tb-label">Modular Kitchens</span>
+    </div>
+    <h2 class="svc-title fade-up" style="transition-delay:0.08s">Precision-built, made to be used daily.</h2>
+    <p class="svc-desc fade-up" style="transition-delay:0.14s">
+      Every kitchen is machine-cut and edge-banded at the factory, then assembled on site in days, not weeks. Storage is planned around how your family cooks: tall units for stock, deep drawers for vessels, corner solutions that actually open.
+    </p>
+    <dl class="spec-list fade-up" style="transition-delay:0.2s">
+      <div class="spec"><dt>Layouts</dt><dd>Straight, L-shape, U-shape, parallel, island</dd></div>
+      <div class="spec"><dt>Materials</dt><dd>BWR/BWP ply, acrylic, laminate, PU finishes</dd></div>
+      <div class="spec"><dt>Hardware</dt><dd>Soft-close channels and hinges, branded fittings</dd></div>
+      <div class="spec"><dt>Timeline</dt><dd>21 days from design lock to handover</dd></div>
+    </dl>
+    <a href="contact.html" class="btn-solid fade-up" style="transition-delay:0.26s">Get a Kitchen Quote</a>
+  </div>
+</section>
+
+<!-- ─── 02 · FULL HOME INTERIORS ─────────────────────────────── -->
+<section class="svc-row alt reveal" id="homes">
+  <div class="svc-img fade-up">
+    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1100&q=85"
+         alt="Living room of a full home interior with built-in shelving and warm lighting">
+  </div>
+  <div class="svc-body">
+    <div class="titleblock fade-up">
+      <span class="tb-num">02</span><span class="tb-rule"></span><span class="tb-label">Full Home Interiors</span>
+    </div>
+    <h2 class="svc-title fade-up" style="transition-delay:0.08s">2, 3 and 4BHK packages, end to end.</h2>
+    <p class="svc-desc fade-up" style="transition-delay:0.14s">
+      One design language across every room, one project manager, one date on the calendar. You approve the complete 3D walkthrough before production starts, so there are no surprises on site.
+    </p>
+    <dl class="spec-list fade-up" style="transition-delay:0.2s">
+      <div class="spec"><dt>Coverage</dt><dd>Living, bedrooms, kitchen, dining, pooja, foyer</dd></div>
+      <div class="spec"><dt>Includes</dt><dd>Wardrobes, TV unit, kitchen, ceilings, lighting</dd></div>
+      <div class="spec"><dt>Preview</dt><dd>Full-home 3D render approved before build</dd></div>
+      <div class="spec"><dt>Timeline</dt><dd>45&ndash;60 days for a complete 3BHK</dd></div>
+    </dl>
+    <a href="contact.html" class="btn-solid fade-up" style="transition-delay:0.26s">Plan My Home</a>
+  </div>
+</section>
+
+<!-- ─── 03 · FALSE CEILINGS ──────────────────────────────────── -->
+<section class="svc-row reveal" id="ceilings">
+  <div class="svc-img fade-up">
+    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1100&q=85"
+         alt="Bedroom with a tray ceiling and concealed cove lighting">
+  </div>
+  <div class="svc-body">
+    <div class="titleblock fade-up">
+      <span class="tb-num">03</span><span class="tb-rule"></span><span class="tb-label">False Ceilings</span>
+    </div>
+    <h2 class="svc-title fade-up" style="transition-delay:0.08s">Light is a building material.</h2>
+    <p class="svc-desc fade-up" style="transition-delay:0.14s">
+      Gypsum and POP ceilings shaped around concealed cove lighting, profile lights and fans. The ceiling sets the mood of the room; we design it together with the lighting plan, never as an afterthought.
+    </p>
+    <dl class="spec-list fade-up" style="transition-delay:0.2s">
+      <div class="spec"><dt>Systems</dt><dd>Gypsum board, POP, grid and cove designs</dd></div>
+      <div class="spec"><dt>Lighting</dt><dd>Cove LED, profile lights, spot layouts</dd></div>
+      <div class="spec"><dt>Rooms</dt><dd>Living, bedrooms, dining, commercial halls</dd></div>
+      <div class="spec"><dt>Timeline</dt><dd>5&ndash;10 days per home</dd></div>
+    </dl>
+    <a href="contact.html" class="btn-solid fade-up" style="transition-delay:0.26s">Get a Ceiling Quote</a>
+  </div>
+</section>
+
+<!-- ─── 04 · WARDROBES & CUSTOM UNITS ────────────────────────── -->
+<section class="svc-row alt reveal" id="custom">
+  <div class="svc-img fade-up">
+    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1100&q=85"
+         alt="Living room wall with a custom TV unit and floating shelves">
+  </div>
+  <div class="svc-body">
+    <div class="titleblock fade-up">
+      <span class="tb-num">04</span><span class="tb-rule"></span><span class="tb-label">Wardrobes &amp; Custom Units</span>
+    </div>
+    <h2 class="svc-title fade-up" style="transition-delay:0.08s">Storage that disappears into the design.</h2>
+    <p class="svc-desc fade-up" style="transition-delay:0.14s">
+      Floor-to-ceiling wardrobes, TV walls with hidden cabling, crockery units, study corners and pooja units. Built to the millimetre for your walls, not adapted from standard sizes.
+    </p>
+    <dl class="spec-list fade-up" style="transition-delay:0.2s">
+      <div class="spec"><dt>Units</dt><dd>Wardrobes, TV walls, crockery, study, pooja</dd></div>
+      <div class="spec"><dt>Doors</dt><dd>Hinged, sliding, mirrored, profile-glass</dd></div>
+      <div class="spec"><dt>Extras</dt><dd>Lofts, dressers, concealed cable routing</dd></div>
+      <div class="spec"><dt>Timeline</dt><dd>2&ndash;3 weeks per home</dd></div>
+    </dl>
+    <a href="contact.html" class="btn-solid fade-up" style="transition-delay:0.26s">Design My Storage</a>
+  </div>
+</section>
+
+<!-- ─── 05 · COMMERCIAL ──────────────────────────────────────── -->
+<section class="svc-row reveal" id="commercial">
+  <div class="svc-img fade-up">
+    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85"
+         alt="Open-plan office with workstations and acoustic ceiling panels">
+  </div>
+  <div class="svc-body">
+    <div class="titleblock fade-up">
+      <span class="tb-num">05</span><span class="tb-rule"></span><span class="tb-label">Commercial Spaces</span>
+    </div>
+    <h2 class="svc-title fade-up" style="transition-delay:0.08s">Offices, cafes and showrooms that work hard.</h2>
+    <p class="svc-desc fade-up" style="transition-delay:0.14s">
+      Fit-outs planned around your operating hours: we phase the work so your business keeps running. Durable materials, acoustic planning and lighting that holds up to twelve-hour days.
+    </p>
+    <dl class="spec-list fade-up" style="transition-delay:0.2s">
+      <div class="spec"><dt>Spaces</dt><dd>Offices, cafes, clinics, retail showrooms</dd></div>
+      <div class="spec"><dt>Scope</dt><dd>Partitions, ceilings, furniture, branding walls</dd></div>
+      <div class="spec"><dt>Phasing</dt><dd>Night and weekend installation available</dd></div>
+      <div class="spec"><dt>Timeline</dt><dd>Scoped per project, fixed before start</dd></div>
+    </dl>
+    <a href="contact.html" class="btn-solid fade-up" style="transition-delay:0.26s">Discuss My Space</a>
+  </div>
+</section>
+
+<!-- ─── PACKAGES ─────────────────────────────────────────────── -->
+<section style="background:var(--paper-2);padding:clamp(72px,10vh,128px) clamp(20px,5vw,64px)">
+  <div style="max-width:1320px;margin:0 auto">
+
+    <div class="reveal" style="margin-bottom:clamp(36px,5vw,56px)">
+      <div class="titleblock fade-up">
+        <span class="tb-num">06</span><span class="tb-rule"></span><span class="tb-label">Packages</span>
+      </div>
+      <h2 class="h-sec fade-up" style="transition-delay:0.08s">Three ways to start.</h2>
+      <p class="lead fade-up" style="margin-top:14px;transition-delay:0.15s">
+        Indicative pricing for a 2BHK. Your fixed quote comes after a free site visit, and it does not change after you sign.
+      </p>
     </div>
 
-    <!-- HERO -->
-    <section class="h-[60vh] bg-surface flex flex-col justify-center items-center text-center mt-[68px]">
-        <div class="reveal">
-            <div class="clip-up-text clip-up">
-                <h1 class="font-display font-bold text-[clamp(48px,6vw,80px)] text-sand">What We Design</h1>
-            </div>
-        </div>
-    </section>
+    <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-5">
 
-    <!-- 01 RESIDENTIAL -->
-    <section class="flex flex-col md:flex-row min-h-[80vh] overflow-hidden bg-deep reveal">
-        <div class="w-full md:w-1/2 relative overflow-hidden h-[50vh] md:h-auto">
-            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80" alt="Modular Kitchens" class="absolute w-full h-[140%] object-cover parallax-img -top-[20%]">
-        </div>
-        <div class="w-full md:w-1/2 flex items-center justify-center p-12 md:p-24 relative">
-            <div class="font-display font-black text-[120px] text-teal opacity-10 absolute top-10 left-10 pointer-events-none fade-up">01</div>
-            <div class="relative z-10 w-full max-w-lg">
-                <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-4 fade-up" style="transition-delay: 0.1s">RESIDENTIAL DESIGN</div>
-                <h2 class="font-display font-bold text-5xl md:text-6xl text-sand mb-6 fade-up" style="transition-delay: 0.2s">Spaces that feel like home — because they are.</h2>
-                <p class="font-italic text-[17px] text-sand-dim leading-[1.8] mb-8 fade-up" style="transition-delay: 0.3s">
-                    Every residential project is a deeply personal journey. We create healthy, beautiful living environments that reflect your lifestyle. Full turnkey from concept to handover.
-                </p>
-                <ul class="space-y-3 mb-10 fade-up" style="transition-delay: 0.4s">
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Spatial Planning & Layouts</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Material & Finishes Selection</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Custom Furniture Design</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Complete Project Execution</li>
-                </ul>
-                <a href="contact.html" class="btn-text-copper fade-up" style="transition-delay: 0.5s">Discuss This Project &rarr;</a>
-            </div>
-        </div>
-    </section>
+      <div class="tier fade-up">
+        <div class="tier-tag">Essentials</div>
+        <div class="tier-name">Smart Start</div>
+        <p class="tier-for">For rental homes and first flats that need the basics done right.</p>
+        <dl class="tier-rows">
+          <div class="tier-row"><dt>Kitchen</dt><dd>Laminate modular</dd></div>
+          <div class="tier-row"><dt>Wardrobes</dt><dd>2 bedrooms</dd></div>
+          <div class="tier-row"><dt>Ceiling</dt><dd>Living room cove</dd></div>
+          <div class="tier-row"><dt>From</dt><dd>&#8377;3.5L</dd></div>
+        </dl>
+        <a href="contact.html" class="btn-solid" style="width:100%">Get Exact Quote</a>
+      </div>
 
-    <!-- 02 COMMERCIAL -->
-    <section class="flex flex-col md:flex-row-reverse min-h-[80vh] overflow-hidden bg-surface reveal">
-        <div class="w-full md:w-1/2 relative overflow-hidden h-[50vh] md:h-auto">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80" alt="Custom Wardrobes" class="absolute w-full h-[140%] object-cover parallax-img -top-[20%]">
-        </div>
-        <div class="w-full md:w-1/2 flex items-center justify-center p-12 md:p-24 relative">
-            <div class="font-display font-black text-[120px] text-teal opacity-10 absolute top-10 left-10 pointer-events-none fade-up">02</div>
-            <div class="relative z-10 w-full max-w-lg">
-                <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-4 fade-up" style="transition-delay: 0.1s">COMMERCIAL SPACES</div>
-                <h2 class="font-display font-bold text-5xl md:text-6xl text-sand mb-6 fade-up" style="transition-delay: 0.2s">Your brand, made spatial.</h2>
-                <p class="font-italic text-[17px] text-sand-dim leading-[1.8] mb-8 fade-up" style="transition-delay: 0.3s">
-                    Offices, retail, and workspaces that inspire productivity and embody your brand's ethos. Function-first, aesthetics always.
-                </p>
-                <ul class="space-y-3 mb-10 fade-up" style="transition-delay: 0.4s">
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Ergonomic Office Layouts</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Brand Identity Integration</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Collaborative Zones</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Retail Store Design</li>
-                </ul>
-                <a href="contact.html" class="btn-text-copper fade-up" style="transition-delay: 0.5s">Discuss This Project &rarr;</a>
-            </div>
-        </div>
-    </section>
+      <div class="tier featured fade-up" style="transition-delay:0.1s">
+        <div class="tier-tag">Most Chosen</div>
+        <div class="tier-name">Signature</div>
+        <p class="tier-for" >The full-home package most Chennai families pick.</p>
+        <dl class="tier-rows">
+          <div class="tier-row"><dt>Kitchen</dt><dd>Acrylic modular + tall unit</dd></div>
+          <div class="tier-row"><dt>Wardrobes</dt><dd>All bedrooms + lofts</dd></div>
+          <div class="tier-row"><dt>Ceiling</dt><dd>Full home + profile lighting</dd></div>
+          <div class="tier-row"><dt>From</dt><dd>&#8377;6.5L</dd></div>
+        </dl>
+        <a href="contact.html" class="btn-brass" style="width:100%">Get Exact Quote</a>
+      </div>
 
-    <!-- 03 RESTAURANT -->
-    <section class="flex flex-col md:flex-row min-h-[80vh] overflow-hidden bg-deep reveal">
-        <div class="w-full md:w-1/2 relative overflow-hidden h-[50vh] md:h-auto">
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="TV Units & Storage" class="absolute w-full h-[140%] object-cover parallax-img -top-[20%]">
-        </div>
-        <div class="w-full md:w-1/2 flex items-center justify-center p-12 md:p-24 relative">
-            <div class="font-display font-black text-[120px] text-teal opacity-10 absolute top-10 left-10 pointer-events-none fade-up">03</div>
-            <div class="relative z-10 w-full max-w-lg">
-                <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-4 fade-up" style="transition-delay: 0.1s">RESTAURANT DESIGN</div>
-                <h2 class="font-display font-bold text-5xl md:text-6xl text-sand mb-6 fade-up" style="transition-delay: 0.2s">Hospitality begins before the food arrives.</h2>
-                <p class="font-italic text-[17px] text-sand-dim leading-[1.8] mb-8 fade-up" style="transition-delay: 0.3s">
-                    Immersive dining environments that create memorable experiences. We handle full FF&E specification to ensure durability meets design.
-                </p>
-                <ul class="space-y-3 mb-10 fade-up" style="transition-delay: 0.4s">
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Conceptual Theming</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Seating Capacity Optimization</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Lighting Design</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Back-of-House Coordination</li>
-                </ul>
-                <a href="contact.html" class="btn-text-copper fade-up" style="transition-delay: 0.5s">Discuss This Project &rarr;</a>
-            </div>
-        </div>
-    </section>
+      <div class="tier fade-up" style="transition-delay:0.2s">
+        <div class="tier-tag">Luxe</div>
+        <div class="tier-name">Statement</div>
+        <p class="tier-for">PU finishes, feature walls and lighting design for homes that host.</p>
+        <dl class="tier-rows">
+          <div class="tier-row"><dt>Kitchen</dt><dd>PU / glass island kitchen</dd></div>
+          <div class="tier-row"><dt>Wardrobes</dt><dd>Walk-in + dressers</dd></div>
+          <div class="tier-row"><dt>Ceiling</dt><dd>Designer + scene lighting</dd></div>
+          <div class="tier-row"><dt>From</dt><dd>&#8377;12L</dd></div>
+        </dl>
+        <a href="contact.html" class="btn-solid" style="width:100%">Get Exact Quote</a>
+      </div>
 
-    <!-- 04 MODULAR -->
-    <section class="flex flex-col md:flex-row-reverse min-h-[80vh] overflow-hidden bg-surface reveal">
-        <div class="w-full md:w-1/2 relative overflow-hidden h-[50vh] md:h-auto">
-            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=80" alt="Carpentry & Wood Work" class="absolute w-full h-[140%] object-cover parallax-img -top-[20%]">
-        </div>
-        <div class="w-full md:w-1/2 flex items-center justify-center p-12 md:p-24 relative">
-            <div class="font-display font-black text-[120px] text-teal opacity-10 absolute top-10 left-10 pointer-events-none fade-up">04</div>
-            <div class="relative z-10 w-full max-w-lg">
-                <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-4 fade-up" style="transition-delay: 0.1s">MODULAR SOLUTIONS</div>
-                <h2 class="font-display font-bold text-5xl md:text-6xl text-sand mb-6 fade-up" style="transition-delay: 0.2s">Precision engineering meets personal taste.</h2>
-                <p class="font-italic text-[17px] text-sand-dim leading-[1.8] mb-8 fade-up" style="transition-delay: 0.3s">
-                    Space-optimized, quality-built modular kitchens and wardrobes that are designed to last and styled to impress.
-                </p>
-                <ul class="space-y-3 mb-10 fade-up" style="transition-delay: 0.4s">
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Custom Kitchen Designs</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Wardrobes & Storage</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Premium Hardware Integration</li>
-                    <li class="font-ui text-[13px] text-sand-dim flex items-center gap-3"><span class="w-1.5 h-1.5 bg-copper rounded-full"></span> Factory-Finish Installation</li>
-                </ul>
-                <a href="contact.html" class="btn-text-copper fade-up" style="transition-delay: 0.5s">Discuss This Project &rarr;</a>
-            </div>
-        </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- BOTTOM CTA BAND -->
-    <section class="bg-copper w-full py-16 px-[5%] text-center reveal">
-        <h2 class="font-italic text-2xl text-white mb-6 fade-up">Every project starts with a free conversation.</h2>
-        <a href="contact.html" class="inline-block border border-white text-white font-ui text-[11px] font-semibold tracking-[0.2em] uppercase py-4 px-10 hover:bg-white hover:text-copper transition-colors fade-up" style="transition-delay: 0.2s">Book Yours &rarr;</a>
-    </section>
+<!-- ─── PROCESS ──────────────────────────────────────────────── -->
+<section class="on-dark" style="background:var(--ink);padding:clamp(72px,10vh,128px) clamp(20px,5vw,64px)">
+  <div style="max-width:1320px;margin:0 auto">
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <div class="nav-logo-mark mb-6"></div>
-                <div class="font-display font-bold text-2xl text-glow mb-1">NITHISH</div>
-                <div class="font-ui text-[8px] text-sand-muted tracking-[0.6em] mb-4 uppercase">INTERIOR</div>
-                <p class="font-italic text-[13px] text-sand-muted">Crafted with Precision. Built to Last.</p>
-            </div>
-            
-            <div>
-                <div class="footer-label">PAGES</div>
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="work.html" class="footer-link">Work</a>
-                <a href="services.html" class="footer-link">Services</a>
-                <a href="about.html" class="footer-link">About</a>
-                <a href="contact.html" class="footer-link">Contact</a>
-            </div>
-            
-            <div>
-                <div class="footer-label">CONTACT</div>
-                <span class="footer-text">+91 88258 96300</span>
-                <span class="footer-text">27, Periyathottam, Edayarpalayam, Coimbatore</span>
-                <span class="footer-text">Coimbatore, Tamil Nadu</span>
-                <span class="footer-text">Mon-Sat: 10AM - 7PM</span>
-            </div>
-            
-            <div>
-                <div class="footer-label">SOCIAL</div>
-                <a href="#" class="footer-link footer-social">Instagram @riverinteriordesign.in</a>
-                <a href="#" class="footer-link footer-social">Facebook Nithish Interior</a>
-                <a href="#" class="footer-link footer-social">WhatsApp Direct Link</a>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            &copy; 2024 Nithish Interior, Coimbatore. Website by ElevateUX.
-        </div>
-    </footer>
+    <div class="reveal" style="margin-bottom:clamp(32px,4vw,48px)">
+      <div class="titleblock fade-up">
+        <span class="tb-num">07</span><span class="tb-rule"></span><span class="tb-label">How It Works</span>
+      </div>
+      <h2 class="h-sec fade-up" style="transition-delay:0.08s">Five steps. No surprises.</h2>
+    </div>
 
-    <script src="js/main.js"></script>
+    <div class="reveal">
+      <div class="step-row fade-up">
+        <span class="step-num">01</span>
+        <span class="step-title">Free site visit</span>
+        <span class="step-desc">We measure your home, hear how you live in it, and note what the building allows. No charge, no obligation.</span>
+      </div>
+      <div class="step-row fade-up" style="transition-delay:0.06s">
+        <span class="step-num">02</span>
+        <span class="step-title">3D design &amp; fixed quote</span>
+        <span class="step-desc">You walk through your future home in 3D and revise it until it is right. The quote you approve is the amount you pay.</span>
+      </div>
+      <div class="step-row fade-up" style="transition-delay:0.12s">
+        <span class="step-num">03</span>
+        <span class="step-title">Factory production</span>
+        <span class="step-desc">Panels are machine-cut and edge-banded at the factory while your site is prepped. Cleaner, faster, more accurate than carpentry on site.</span>
+      </div>
+      <div class="step-row fade-up" style="transition-delay:0.18s">
+        <span class="step-num">04</span>
+        <span class="step-title">Installation</span>
+        <span class="step-desc">Our own installation crew assembles everything to the drawing. A project manager updates you with photos at every milestone.</span>
+      </div>
+      <div class="step-row fade-up" style="transition-delay:0.24s">
+        <span class="step-num">05</span>
+        <span class="step-title">Handover &amp; warranty</span>
+        <span class="step-desc">A joint walkthrough against the approved render, then keys and warranty documents. We return for a free check at six months.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── FAQ ──────────────────────────────────────────────────── -->
+<section style="background:var(--paper);padding:clamp(72px,10vh,120px) clamp(20px,5vw,64px)">
+  <div style="max-width:1320px;margin:0 auto" class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10">
+
+    <div class="lg:col-span-5 reveal">
+      <div class="titleblock fade-up">
+        <span class="tb-num">08</span><span class="tb-rule"></span><span class="tb-label">Questions</span>
+      </div>
+      <h2 class="h-sec fade-up" style="transition-delay:0.08s">Asked before every project.</h2>
+      <p class="lead fade-up" style="margin-top:14px;transition-delay:0.15s">
+        Anything else, call us. A designer answers, not a call centre.
+      </p>
+      <a href="tel:+919677067989" class="link-arrow fade-up" style="margin-top:22px;transition-delay:0.2s">+91 96770 67989 <span>&rarr;</span></a>
+    </div>
+
+    <div class="lg:col-span-7 reveal">
+      <div class="faq-item fade-up">
+        <button class="faq-q">Will the final cost change after I sign?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>No. The quote you approve with the 3D design is the final amount. If anything on site forces a change, we absorb it or get your written approval first.</p></div>
+      </div>
+      <div class="faq-item fade-up" style="transition-delay:0.06s">
+        <button class="faq-q">How long does a full 3BHK take?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>45 to 60 days from design lock, depending on scope. The date is written into your agreement, and 700+ projects in, we have not missed one.</p></div>
+      </div>
+      <div class="faq-item fade-up" style="transition-delay:0.12s">
+        <button class="faq-q">Can I see the design before paying for the build?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes. You approve a complete 3D walkthrough of every room before production starts. Revisions at this stage are free.</p></div>
+      </div>
+      <div class="faq-item fade-up" style="transition-delay:0.18s">
+        <button class="faq-q">Do you handle homes outside Velachery?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>We work across all of Chennai and its suburbs: Adyar, Anna Nagar, Tambaram, OMR, Porur, Perungudi and beyond. Site visits are free everywhere we serve.</p></div>
+      </div>
+      <div class="faq-item fade-up" style="transition-delay:0.24s">
+        <button class="faq-q">What warranty do you give?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Up to 10 years on factory-made modular units and 1 year on site work, with a free six-month service visit included in every package.</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CTA ──────────────────────────────────────────────────── -->
+<section class="reveal on-dark" style="position:relative;overflow:hidden;padding:clamp(88px,14vh,150px) 6%;text-align:center">
+  <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=80"
+       alt="Morning light across a finished modular kitchen"
+       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <div style="position:absolute;inset:0;background:rgba(10,16,22,0.82)"></div>
+  <div style="position:relative;z-index:10;max-width:720px;margin:0 auto">
+    <h2 class="fade-up" style="font-family:var(--font-h);font-weight:800;font-size:clamp(32px,5vw,60px);letter-spacing:-0.03em;line-height:1.05;color:#FFFFFF;margin-bottom:18px">
+      Every project starts with a free conversation.
+    </h2>
+    <p class="fade-up" style="font-size:17px;color:rgba(255,255,255,0.6);margin-bottom:40px;transition-delay:0.1s">
+      Tell us about your home. We will bring the measurements, the ideas and the quote.
+    </p>
+    <div class="fade-up flex flex-col sm:flex-row gap-4 justify-center" style="transition-delay:0.18s">
+      <a href="contact.html" class="btn-brass">Book Free Consultation</a>
+      <a href="tel:+919677067989" class="btn-ghost-white">+91 96770 67989</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-word">Blue Homes Interiors<em>.</em></div>
+
+  <div class="footer-grid">
+    <div>
+      <p class="footer-blurb">
+        A Chennai interior studio building homes with factory precision: full 3D previews, fixed quotes, and handover dates we keep.
+      </p>
+      <div class="footer-rating"><b>★★★★★</b> 4.9 · 280+ Google reviews</div>
+    </div>
+    <div>
+      <div class="footer-label">Pages</div>
+      <a href="index.html"    class="footer-link">Home</a>
+      <a href="services.html" class="footer-link">Services</a>
+      <a href="work.html"     class="footer-link">Portfolio</a>
+      <a href="about.html"    class="footer-link">About</a>
+      <a href="contact.html"  class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-label">Services</div>
+      <a href="services.html#kitchens"   class="footer-link">Modular Kitchens</a>
+      <a href="services.html#homes"      class="footer-link">Full Home Interiors</a>
+      <a href="services.html#ceilings"   class="footer-link">False Ceilings</a>
+      <a href="services.html#commercial" class="footer-link">Commercial Spaces</a>
+    </div>
+    <div>
+      <div class="footer-label">Get in Touch</div>
+      <a href="tel:+919677067989"                    class="footer-link">+91 96770 67989</a>
+      <a href="mailto:contact@bluehomesinteriors.in" class="footer-link">contact@bluehomesinteriors.in</a>
+      <span class="footer-text">MGR Nagar, Velachery, Chennai 600042</span>
+      <span class="footer-text">Mon&ndash;Sun · 8:30 AM &ndash; 11:30 PM</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 Blue Homes Interiors. All rights reserved.</span>
+    <span>Serving Velachery · Adyar · Anna Nagar · Tambaram · OMR · Porur · all of Chennai</span>
+  </div>
+</footer>
+
+<!-- ─── WHATSAPP FLOAT ───────────────────────────────────────── -->
+<a href="https://wa.me/919677067989" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="js/main.js"></script>
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
 </body>
 </html>

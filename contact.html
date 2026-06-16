@@ -1,211 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Nithish Interior</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        deep: '#0D1525',
-                        surface: '#152038',
-                        raised: '#1E2F4D',
-                        elevated: '#2A3F62',
-                        teal: '#6B7BA4',
-                        glow: '#8A9CC4',
-                        shimmer: '#B0BDD8',
-                        sand: '#EDE0BC',
-                        'sand-dim': '#DEBB7A',
-                        'sand-muted': '#A89060',
-                        copper: '#C8904A',
-                        'copper-bright': '#DDA060',
-                        'copper-dim': '#9A6830',
-                        border: 'rgba(107,123,164,0.15)',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Blue Homes Interiors, Chennai</title>
+  <meta name="description" content="Book a free consultation with Blue Homes Interiors. A designer calls within 24 hours, the site visit is free, and the quote is fixed.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { copper: '#C9952C', ink: '#0D1B26', brand: '#2E7D9E' } } } }
+  </script>
 </head>
-<body class="bg-deep text-sand">
+<body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <div class="nav-logo-mark"></div>
-            <a href="index.html" class="nav-title">NITHISH</a>
-            <div class="nav-subtitle">INTERIOR</div>
-        </div>
-        
-        <div class="nav-center hidden md:flex">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="work.html" class="nav-link">Work</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link active">Contact</a>
-        </div>
-        
-        <div class="nav-right hidden md:flex">
-            <a href="contact.html" class="btn-text-copper">FREE CONSULTATION &rarr;</a>
+<!-- ─── NAV ─────────────────────────────────────────────────── -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 10.5L12 3L21 10.5V20C21 20.55 20.55 21 20 21H15V15.5C15 15.22 14.78 15 14.5 15H9.5C9.22 15 9 15.22 9 15.5V21H4C3.45 21 3 20.55 3 20V10.5Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="nav-brand-words">
+      <span class="nav-brand-name">Blue Homes</span>
+      <span class="nav-brand-sub">Interiors</span>
+    </div>
+  </a>
+  <div class="nav-center hidden md:flex">
+    <a href="index.html"    class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="work.html"     class="nav-link">Portfolio</a>
+    <a href="about.html"    class="nav-link">About</a>
+    <a href="contact.html"  class="nav-link active">Contact</a>
+  </div>
+  <div class="nav-right hidden md:flex">
+    <a href="#contact-form" class="btn-text-copper">Book a Consultation</a>
+  </div>
+  <div class="menu-toggle md:hidden"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link">Home</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="work.html"     class="nav-link">Portfolio</a>
+  <a href="about.html"    class="nav-link">About</a>
+  <a href="contact.html"  class="nav-link active">Contact</a>
+  <a href="#contact-form" class="btn-primary mt-6">Book a Consultation</a>
+</div>
+
+<!-- ─── HEADER ───────────────────────────────────────────────── -->
+<header class="reveal" style="background:var(--paper);padding:calc(72px + clamp(48px,8vh,96px)) clamp(20px,5vw,64px) clamp(40px,6vh,64px)">
+  <div style="max-width:1320px;margin:0 auto">
+    <div class="titleblock fade-up">
+      <span class="tb-num">Contact</span><span class="tb-rule"></span><span class="tb-label">Free Consultation</span>
+    </div>
+    <div class="clip-up-text">
+      <h1 class="display">Let's talk about<br>your home.</h1>
+    </div>
+    <p class="lead fade-up" style="margin-top:24px;transition-delay:0.15s">
+      Two minutes to fill, free forever. A designer calls you back within 24 hours, not a sales agent.
+    </p>
+  </div>
+</header>
+
+<!-- ─── CONTACT GRID ─────────────────────────────────────────── -->
+<section style="background:var(--paper);padding:0 clamp(20px,5vw,64px) clamp(80px,11vh,128px)">
+  <div class="contact-grid reveal" style="max-width:1320px;margin:0 auto">
+
+    <!-- Info panel (sticky, ink) -->
+    <aside class="contact-panel on-dark fade-up">
+
+      <div class="titleblock">
+        <span class="tb-num">01</span><span class="tb-rule"></span><span class="tb-label">What Happens Next</span>
+      </div>
+
+      <ol style="list-style:none;margin:8px 0 38px">
+        <li style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-dark)">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--brass-bright);flex-shrink:0">1</span>
+          <span style="font-size:14.5px;line-height:1.6;color:rgba(255,255,255,0.7)">A designer calls within 24 hours to hear about your home.</span>
+        </li>
+        <li style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-dark)">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--brass-bright);flex-shrink:0">2</span>
+          <span style="font-size:14.5px;line-height:1.6;color:rgba(255,255,255,0.7)">We visit, measure and listen. The site visit is free anywhere in Chennai.</span>
+        </li>
+        <li style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-dark)">
+          <span style="font-family:var(--font-h);font-weight:600;font-size:13px;color:var(--brass-bright);flex-shrink:0">3</span>
+          <span style="font-size:14.5px;line-height:1.6;color:rgba(255,255,255,0.7)">You get a 3D design and a fixed quote. Decide at your own pace.</span>
+        </li>
+      </ol>
+
+      <dl style="margin-bottom:36px">
+        <div class="cp-row"><dt>Phone</dt><dd><a href="tel:+919677067989">+91 96770 67989</a></dd></div>
+        <div class="cp-row"><dt>WhatsApp</dt><dd><a href="https://wa.me/919677067989" target="_blank" rel="noopener">Chat with us</a></dd></div>
+        <div class="cp-row"><dt>Email</dt><dd><a href="mailto:contact@bluehomesinteriors.in">contact@bluehomesinteriors.in</a></dd></div>
+        <div class="cp-row"><dt>Studio</dt><dd>MGR Nagar, Velachery,<br>Chennai 600042</dd></div>
+        <div class="cp-row"><dt>Hours</dt><dd>Mon&ndash;Sun · 8:30 AM &ndash; 11:30 PM</dd></div>
+      </dl>
+
+      <div class="footer-rating" style="margin-top:0"><b>★★★★★</b> 4.9 · 280+ Google reviews</div>
+
+    </aside>
+
+    <!-- Form -->
+    <div class="contact-form-col fade-up" style="transition-delay:0.1s">
+      <form action="#" method="POST" id="contact-form" style="display:flex;flex-direction:column;gap:26px;background:var(--paper-2);border-radius:16px;padding:clamp(26px,4vw,48px)">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name <span style="color:var(--blue)">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number <span style="color:var(--blue)">*</span></label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+          </div>
         </div>
 
-        <div class="menu-toggle md:hidden">
-            <span></span>
-            <span></span>
+        <div class="form-group">
+          <label for="project_type" class="form-label">Project Type <span style="color:var(--blue)">*</span></label>
+          <select id="project_type" name="project_type" class="form-select form-input" required>
+            <option value="" disabled selected>Select your project type</option>
+            <option value="modular-kitchen">Modular Kitchen</option>
+            <option value="2bhk">2BHK Interior</option>
+            <option value="3bhk">3BHK Interior</option>
+            <option value="4bhk">4BHK Interior</option>
+            <option value="false-ceiling">False Ceiling</option>
+            <option value="wardrobe-custom">Wardrobes / Custom Units</option>
+            <option value="commercial">Commercial Space</option>
+          </select>
         </div>
-    </nav>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="work.html" class="nav-link">Work</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+        <div class="form-group">
+          <label class="form-label">Budget Range</label>
+          <div class="budget-slider-wrap" style="background:var(--paper);padding:18px 16px;border-radius:10px;border:1px solid var(--line)">
+            <input type="range" id="budget-slider" min="0" max="5" value="1" step="1" oninput="updateBudget(this)">
+            <div class="budget-range-labels"><span>Under &#8377;50K</span><span>&#8377;5L+</span></div>
+            <div class="budget-value" id="budget-display">Under &#8377;50,000</div>
+          </div>
+          <input type="hidden" id="budget-value" name="budget">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">When are you looking to start?</label>
+          <div class="timeline-options">
+            <input class="timeline-radio" type="radio" name="timeline" id="t1" value="immediate">
+            <label class="timeline-label" for="t1">Immediately</label>
+            <input class="timeline-radio" type="radio" name="timeline" id="t2" value="1-3months">
+            <label class="timeline-label" for="t2">1&ndash;3 Months</label>
+            <input class="timeline-radio" type="radio" name="timeline" id="t3" value="3-6months">
+            <label class="timeline-label" for="t3">3&ndash;6 Months</label>
+            <input class="timeline-radio" type="radio" name="timeline" id="t4" value="exploring">
+            <label class="timeline-label" for="t4">Just Exploring</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="notes" class="form-label">About Your Home <span style="color:var(--text-2);font-weight:400">(optional)</span></label>
+          <textarea id="notes" name="notes" class="form-textarea form-input" placeholder="Style preferences, specific rooms, anything you have saved on Pinterest..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Book Free Consultation</button>
+
+        <p style="font-size:12.5px;color:var(--text-2);text-align:center;margin-top:-8px">
+          No spam, no pressure. Your number is used only to call you back.
+        </p>
+
+      </form>
     </div>
 
-    <!-- HERO -->
-    <section class="h-[40vh] bg-surface flex flex-col justify-end items-center text-center pb-12 mt-[68px]">
-        <div class="reveal">
-            <div class="clip-up-text clip-up">
-                <h1 class="font-display italic font-bold text-[clamp(48px,6vw,80px)] text-sand">Let's Design Your Space.</h1>
-            </div>
-        </div>
-    </section>
+  </div>
+</section>
 
-    <!-- SPLIT LAYOUT CONTACT -->
-    <section class="bg-deep py-24 px-[5%]">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
-            
-            <!-- LEFT: Information -->
-            <div class="w-full md:w-[45%] reveal">
-                <div class="inline-block border border-copper bg-[rgba(200,144,74,0.1)] px-5 py-2.5 mb-10 fade-up">
-                    <span class="font-ui text-[11px] text-copper uppercase tracking-wider font-semibold">Free Initial Consultation</span>
-                </div>
-                
-                <div class="space-y-10 fade-up" style="transition-delay: 0.1s">
-                    <div>
-                        <h4 class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase mb-3">Phone</h4>
-                        <a href="tel:+91 88258 96300" class="font-display text-2xl md:text-3xl text-sand hover:text-glow transition-colors">+91 88258 96300</a>
-                    </div>
-                    
-                    <div>
-                        <h4 class="font-ui text-[10px] text-sand-muted tracking-[0.4em] uppercase mb-3">Studio</h4>
-                        <address class="font-italic text-[18px] text-sand-dim not-italic leading-relaxed">
-                            27, Periyathottam, 4th St,<br>
-                            Edayarpalayam, Coimbatore
-                        </address>
-                        <div class="font-ui text-[13px] text-sand-muted mt-2">Mon-Sat 10AM-7PM</div>
-                    </div>
-                    
-                    <div class="pt-6 border-t border-border">
-                        <a href="https://wa.me/918825896300?text=Hi%20Ponraj,%20I%20found%20River%20Interior%20Design%20and%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="font-ui text-[13px] text-copper hover:text-copper-bright tracking-wider font-semibold transition-colors flex items-center gap-2 mb-6">
-                            Chat with Ponraj on WhatsApp &rarr;
-                        </a>
-                        
-                        <a href="#" class="font-ui text-[13px] text-teal hover:text-glow transition-colors">Instagram: @riverinteriordesign.in</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- RIGHT: Form -->
-            <div class="w-full md:w-[55%] reveal">
-                <form action="#" method="POST" class="flex flex-col gap-8 fade-up" style="transition-delay: 0.2s">
-                    
-                    <div class="relative group">
-                        <input type="text" id="name" name="name" placeholder="Full Name" required class="w-full bg-transparent border-b border-border text-sand font-ui text-[14px] py-4 placeholder-sand-muted/50 focus:outline-none focus:border-teal transition-colors rounded-none">
-                    </div>
-                    
-                    <div class="relative group">
-                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required class="w-full bg-transparent border-b border-border text-sand font-ui text-[14px] py-4 placeholder-sand-muted/50 focus:outline-none focus:border-teal transition-colors rounded-none">
-                    </div>
-                    
-                    <div class="relative group">
-                        <select id="project_type" name="project_type" required class="w-full bg-deep border-b border-border text-sand font-ui text-[14px] py-4 focus:outline-none focus:border-teal transition-colors rounded-none appearance-none cursor-pointer">
-                            <option value="" disabled selected hidden class="text-sand-muted/50">Project Type</option>
-                            <option value="residential">Residential</option>
-                            <option value="commercial">Commercial Office</option>
-                            <option value="restaurant">Restaurant / Cafe</option>
-                            <option value="modular">Carpentry & Wood Work (Kitchen/Wardrobe)</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-sand-muted">▼</div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <select id="budget" name="budget" required class="w-full bg-deep border-b border-border text-sand font-ui text-[14px] py-4 focus:outline-none focus:border-teal transition-colors rounded-none appearance-none cursor-pointer">
-                            <option value="" disabled selected hidden class="text-sand-muted/50">Budget Range</option>
-                            <option value="5-10">₹5L - ₹10L</option>
-                            <option value="10-25">₹10L - ₹25L</option>
-                            <option value="25-50">₹25L - ₹50L</option>
-                            <option value="50+">₹50L+</option>
-                        </select>
-                        <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-sand-muted">▼</div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <textarea id="description" name="description" rows="4" placeholder="Project Description (Tell us about your space)" class="w-full bg-transparent border-b border-border text-sand font-ui text-[14px] py-4 placeholder-sand-muted/50 focus:outline-none focus:border-teal transition-colors rounded-none resize-none"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="w-full h-[56px] bg-copper text-white font-ui font-semibold text-[12px] uppercase tracking-[0.25em] transition-all duration-400 hover:bg-copper-bright hover:tracking-[0.4em] mt-4">
-                        Send Message
-                    </button>
-                    
-                </form>
-                
-                <div class="mt-12 text-center fade-up" style="transition-delay: 0.3s">
-                    <p class="font-ui text-[13px] text-sand-muted">Or walk into our studio:</p>
-                    <p class="font-ui text-[13px] text-sand-dim mt-1">27, Periyathottam, Edayarpalayam, Coimbatore</p>
-                </div>
-            </div>
+<!-- ─── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-word">Blue Homes Interiors<em>.</em></div>
 
-        </div>
-    </section>
+  <div class="footer-grid">
+    <div>
+      <p class="footer-blurb">
+        A Chennai interior studio building homes with factory precision: full 3D previews, fixed quotes, and handover dates we keep.
+      </p>
+      <div class="footer-rating"><b>★★★★★</b> 4.9 · 280+ Google reviews</div>
+    </div>
+    <div>
+      <div class="footer-label">Pages</div>
+      <a href="index.html"    class="footer-link">Home</a>
+      <a href="services.html" class="footer-link">Services</a>
+      <a href="work.html"     class="footer-link">Portfolio</a>
+      <a href="about.html"    class="footer-link">About</a>
+      <a href="contact.html"  class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-label">Services</div>
+      <a href="services.html#kitchens"   class="footer-link">Modular Kitchens</a>
+      <a href="services.html#homes"      class="footer-link">Full Home Interiors</a>
+      <a href="services.html#ceilings"   class="footer-link">False Ceilings</a>
+      <a href="services.html#commercial" class="footer-link">Commercial Spaces</a>
+    </div>
+    <div>
+      <div class="footer-label">Get in Touch</div>
+      <a href="tel:+919677067989"                    class="footer-link">+91 96770 67989</a>
+      <a href="mailto:contact@bluehomesinteriors.in" class="footer-link">contact@bluehomesinteriors.in</a>
+      <span class="footer-text">MGR Nagar, Velachery, Chennai 600042</span>
+      <span class="footer-text">Mon&ndash;Sun · 8:30 AM &ndash; 11:30 PM</span>
+    </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <div class="nav-logo-mark mb-6"></div>
-                <div class="font-display font-bold text-2xl text-glow mb-1">NITHISH</div>
-                <div class="font-ui text-[8px] text-sand-muted tracking-[0.6em] mb-4 uppercase">INTERIOR</div>
-                <p class="font-italic text-[13px] text-sand-muted">Crafted with Precision. Built to Last.</p>
-            </div>
-            
-            <div>
-                <div class="footer-label">PAGES</div>
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="work.html" class="footer-link">Work</a>
-                <a href="services.html" class="footer-link">Services</a>
-                <a href="about.html" class="footer-link">About</a>
-                <a href="contact.html" class="footer-link">Contact</a>
-            </div>
-            
-            <div>
-                <div class="footer-label">CONTACT</div>
-                <span class="footer-text">+91 88258 96300</span>
-                <span class="footer-text">27, Periyathottam, Edayarpalayam, Coimbatore</span>
-                <span class="footer-text">Coimbatore, Tamil Nadu</span>
-                <span class="footer-text">Mon-Sat: 10AM - 7PM</span>
-            </div>
-            
-            <div>
-                <div class="footer-label">SOCIAL</div>
-                <a href="#" class="footer-link footer-social">Instagram @riverinteriordesign.in</a>
-                <a href="#" class="footer-link footer-social">Facebook Nithish Interior</a>
-                <a href="#" class="footer-link footer-social">WhatsApp Direct Link</a>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            &copy; 2024 Nithish Interior, Coimbatore. Website by ElevateUX.
-        </div>
-    </footer>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Blue Homes Interiors. All rights reserved.</span>
+    <span>Serving Velachery · Adyar · Anna Nagar · Tambaram · OMR · Porur · all of Chennai</span>
+  </div>
+</footer>
 
-    <script src="js/main.js"></script>
+<!-- ─── WHATSAPP FLOAT ───────────────────────────────────────── -->
+<a href="https://wa.me/919677067989" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="js/main.js"></script>
+<script>
+  const budgetLabels = [
+    'Under ₹50,000',
+    '₹50,000 – ₹1,00,000',
+    '₹1,00,000 – ₹2,00,000',
+    '₹2,00,000 – ₹3,00,000',
+    '₹3,00,000 – ₹5,00,000',
+    '₹5,00,000+'
+  ];
+
+  function updateBudget(slider) {
+    const val = parseInt(slider.value);
+    slider.style.setProperty('--pct', (val / 5) * 100 + '%');
+    document.getElementById('budget-display').textContent = budgetLabels[val];
+    document.getElementById('budget-value').value = budgetLabels[val];
+  }
+  updateBudget(document.getElementById('budget-slider'));
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('.form-submit');
+    btn.textContent = 'Received. A designer will call you within 24 hours.';
+    btn.style.background = 'var(--blue)';
+    btn.style.color = '#FFFFFF';
+    btn.disabled = true;
+  });
+</script>
 </body>
 </html>

@@ -1,284 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Nithish Interior</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        deep: '#0D1525',
-                        surface: '#152038',
-                        raised: '#1E2F4D',
-                        elevated: '#2A3F62',
-                        teal: '#6B7BA4',
-                        glow: '#8A9CC4',
-                        shimmer: '#B0BDD8',
-                        sand: '#EDE0BC',
-                        'sand-dim': '#DEBB7A',
-                        'sand-muted': '#A89060',
-                        copper: '#C8904A',
-                        'copper-bright': '#DDA060',
-                        'copper-dim': '#9A6830',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Blue Homes Interiors, Chennai</title>
+  <meta name="description" content="Blue Homes Interiors is a Chennai studio founded in 2019. 700+ homes delivered with in-house design, factory production, fixed quotes and on-time handover.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { copper: '#C9952C', ink: '#0D1B26', brand: '#2E7D9E' } } } }
+  </script>
 </head>
-<body class="bg-deep text-sand">
+<body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <div class="nav-logo-mark"></div>
-            <a href="index.html" class="nav-title">NITHISH</a>
-            <div class="nav-subtitle">INTERIOR</div>
-        </div>
-        
-        <div class="nav-center hidden md:flex">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="work.html" class="nav-link">Work</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="about.html" class="nav-link active">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-        
-        <div class="nav-right hidden md:flex">
-            <a href="contact.html" class="btn-text-copper">FREE CONSULTATION &rarr;</a>
-        </div>
+<!-- ─── NAV ─────────────────────────────────────────────────── -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 10.5L12 3L21 10.5V20C21 20.55 20.55 21 20 21H15V15.5C15 15.22 14.78 15 14.5 15H9.5C9.22 15 9 15.22 9 15.5V21H4C3.45 21 3 20.55 3 20V10.5Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="nav-brand-words">
+      <span class="nav-brand-name">Blue Homes</span>
+      <span class="nav-brand-sub">Interiors</span>
+    </div>
+  </a>
+  <div class="nav-center hidden md:flex">
+    <a href="index.html"    class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="work.html"     class="nav-link">Portfolio</a>
+    <a href="about.html"    class="nav-link active">About</a>
+    <a href="contact.html"  class="nav-link">Contact</a>
+  </div>
+  <div class="nav-right hidden md:flex">
+    <a href="contact.html" class="btn-text-copper">Book a Consultation</a>
+  </div>
+  <div class="menu-toggle md:hidden"><span></span><span></span><span></span></div>
+</nav>
 
-        <div class="menu-toggle md:hidden">
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link">Home</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="work.html"     class="nav-link">Portfolio</a>
+  <a href="about.html"    class="nav-link active">About</a>
+  <a href="contact.html"  class="nav-link">Contact</a>
+  <a href="contact.html"  class="btn-primary mt-6">Book a Consultation</a>
+</div>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="work.html" class="nav-link">Work</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link active">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+<!-- ─── HERO (asymmetric editorial) ──────────────────────────── -->
+<header class="reveal" style="background:var(--paper);padding:calc(72px + clamp(40px,6vh,72px)) clamp(20px,5vw,64px) clamp(40px,6vh,72px)">
+  <div class="about-hero" style="max-width:1320px;margin:0 auto">
+
+    <div class="about-hero-text">
+      <div class="titleblock fade-up">
+        <span class="tb-num">About</span><span class="tb-rule"></span><span class="tb-label">The Studio</span>
+      </div>
+      <div class="clip-up-text">
+        <h1 class="display">Built for Chennai.<br>Made for life.</h1>
+      </div>
+      <p class="lead fade-up" style="margin-top:28px;transition-delay:0.15s">
+        We started in 2019 with one belief: a beautiful home should not require a luxury budget, and a sensible budget should never look like a compromise.
+      </p>
+      <div class="fade-up" style="margin-top:36px;transition-delay:0.22s">
+        <a href="contact.html" class="btn-solid">Book a Free Site Visit</a>
+      </div>
     </div>
 
-    <!-- HERO -->
-    <section class="h-[80vh] bg-surface relative overflow-hidden flex items-center px-[5%] mt-[68px]">
-        <div class="font-display font-black text-[200px] text-teal opacity-[0.04] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none w-full text-center tracking-widest uppercase">NITHISH</div>
+    <div class="about-hero-media fade-up" style="transition-delay:0.1s">
+      <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1100&q=85"
+           alt="A handed-over living room with exposed beams and arched windows">
+      <div class="about-hero-tag">
+        <span class="aht-year">Est. 2019</span>
+        <span class="aht-place">Velachery, Chennai</span>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<section class="stats-section reveal" style="background:var(--ink);padding:clamp(72px,10vh,110px) clamp(20px,5vw,64px)">
+  <div style="max-width:1320px;margin:0 auto">
+    <div class="titleblock on-dark">
+      <span class="tb-num">Metrics</span><span class="tb-rule"></span><span class="tb-label">Our Performance</span>
+    </div>
+    <h2 class="h-sec text-white" style="margin-bottom:48px;color:#FFFFFF">Precision in numbers.</h2>
+    <div class="stats-grid">
+      <!-- Card 1 -->
+      <div class="stat-card fade-up">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="stat-num-wrapper">
+          <span class="counter-val" data-target="700">0</span><strong>+</strong>
+        </div>
+        <h4 class="stat-label">Homes Handed Over</h4>
+        <p class="stat-subtext">Delivered across Chennai suburbs from ECR to Tambaram with factory-grade precision.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="stat-card fade-up" style="transition-delay:0.06s">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="stat-num-wrapper">
+          <span class="counter-val" data-target="4.9">0</span>
+        </div>
+        <h4 class="stat-label">Google Rating</h4>
+        <p class="stat-subtext">Based on 280+ verified Google reviews from happy Chennai families.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="stat-card fade-up" style="transition-delay:0.12s">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="stat-num-wrapper">
+          <span class="counter-val" data-target="21">0</span><strong> Days</strong>
+        </div>
+        <h4 class="stat-label">Delivery Timeline</h4>
+        <p class="stat-subtext">From final design lock to handover. Factory-produced modules speed up on-site assembly.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="stat-card fade-up" style="transition-delay:0.18s">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="stat-num-wrapper">
+          <span class="counter-val" data-target="100">0</span><strong>%</strong>
+        </div>
+        <h4 class="stat-label">On-Time Handover</h4>
+        <p class="stat-subtext">Zero missed deadlines. We write the handover date directly into our contract agreements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 01 · STORY + TIMELINE ────────────────────────────────── -->
+<section style="background:var(--paper-2);padding:clamp(88px,12vh,150px) clamp(20px,5vw,64px)">
+  <div style="max-width:1320px;margin:0 auto" class="grid grid-cols-1 lg:grid-cols-12 gap-x-16 gap-y-16">
+ 
+    <!-- Timeline Column -->
+    <div class="lg:col-span-5 reveal">
+      <div style="position:sticky;top:110px">
+        <div class="titleblock fade-up">
+          <span class="tb-num">01</span><span class="tb-rule"></span><span class="tb-label">The Journey</span>
+        </div>
+        <h2 class="h-sec fade-up" style="margin-bottom:38px;margin-top:8px">Milestones along the way.</h2>
         
-        <div class="relative z-10 w-full max-w-7xl mx-auto pt-20">
-            <div class="clip-up-text clip-up">
-                <h1 class="font-display font-black text-[clamp(64px,8vw,120px)] text-sand leading-none">Nine Years.</h1>
+        <div class="custom-timeline fade-up" style="transition-delay:0.1s">
+          <div class="timeline-item">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Foundation in Velachery</h4>
+              <p class="timeline-desc">Started with a small studio of three designers focused on modular kitchens.</p>
             </div>
-            <div class="clip-up-text clip-up">
-                <h1 class="font-display font-light italic text-[clamp(64px,8vw,120px)] text-glow leading-none" style="transition-delay: 0.2s">One Standard.</h1>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">50 Handovers</h4>
+              <p class="timeline-desc">Delivered our first 50 residential projects on time, despite pandemic challenges.</p>
             </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Factory Production</h4>
+              <p class="timeline-desc">Moved modular manufacturing to our own factory in Chennai to guarantee square cuts.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Services Expansion</h4>
+              <p class="timeline-desc">Launched false ceiling, lighting, and commercial design divisions to offer complete fit-outs.</p>
+            </div>
+          </div>
+          <div class="timeline-item current">
+            <div class="timeline-year">Today</div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">700+ Delivered Homes</h4>
+              <p class="timeline-desc">Chennai's leading independent interior studio with full in-house accountability.</p>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- STORY & TIMELINE -->
-    <section class="bg-deep py-24 px-[5%]">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
-            
-            <!-- Timeline (Left) -->
-            <div class="w-full md:w-1/3">
-                <div class="sticky top-32 reveal">
-                    <h2 class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-12 fade-up">Our Journey</h2>
-                    
-                    <div class="relative border-l border-copper/30 ml-2 space-y-10">
-                        <div class="relative pl-6 fade-up" style="transition-delay: 0.1s">
-                            <span class="absolute -left-[5px] top-1.5 w-[9px] h-[9px] bg-copper rounded-full"></span>
-                            <div class="font-ui text-[11px] text-copper tracking-wider font-semibold mb-1">2019</div>
-                            <div class="font-ui text-[13px] text-sand-dim">Studio Founded</div>
-                        </div>
-                        
-                        <div class="relative pl-6 fade-up" style="transition-delay: 0.2s">
-                            <span class="absolute -left-[5px] top-1.5 w-[9px] h-[9px] bg-copper rounded-full"></span>
-                            <div class="font-ui text-[11px] text-copper tracking-wider font-semibold mb-1">2020</div>
-                            <div class="font-ui text-[13px] text-sand-dim">First commercial project</div>
-                        </div>
-                        
-                        <div class="relative pl-6 fade-up" style="transition-delay: 0.3s">
-                            <span class="absolute -left-[5px] top-1.5 w-[9px] h-[9px] bg-copper rounded-full"></span>
-                            <div class="font-ui text-[11px] text-copper tracking-wider font-semibold mb-1">2021</div>
-                            <div class="font-ui text-[13px] text-sand-dim">Restaurant design vertical launched</div>
-                        </div>
-                        
-                        <div class="relative pl-6 fade-up" style="transition-delay: 0.4s">
-                            <span class="absolute -left-[5px] top-1.5 w-[9px] h-[9px] bg-copper rounded-full"></span>
-                            <div class="font-ui text-[11px] text-copper tracking-wider font-semibold mb-1">2022</div>
-                            <div class="font-ui text-[13px] text-sand-dim">Modular solutions added</div>
-                        </div>
-                        
-                        <div class="relative pl-6 fade-up" style="transition-delay: 0.5s">
-                            <span class="absolute -left-[5px] top-1.5 w-[9px] h-[9px] bg-glow shadow-[0_0_10px_var(--glow)] rounded-full"></span>
-                            <div class="font-ui text-[11px] text-glow tracking-wider font-semibold mb-1">2024</div>
-                            <div class="font-ui text-[13px] text-sand">50+ projects delivered</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Story Text (Right) -->
-            <div class="w-full md:w-2/3 max-w-3xl reveal">
-                <div class="space-y-8 font-italic text-[18px] text-sand-dim leading-[1.8] fade-up">
-                    <p>
-                        We started with a simple observation: beautiful spaces shouldn't be difficult to live in, and functional spaces shouldn't be boring. At Nithish Interior, we believe that the true measure of a successful project is not just how it looks on the day of handover, but how it feels five years later.
-                    </p>
-                    <p>
-                        Based in Coimbatore, we've grown from a small design studio into a comprehensive turnkey interior firm. But despite our growth, our core methodology remains unchanged. We don't just decorate rooms; we design experiences. Whether it's a cozy residential home, a bustling restaurant, or a high-performance commercial office, we approach every square foot with intention.
-                    </p>
-                    <p>
-                        The metaphor of a river is central to everything we do. A river is deep, calm, and always moving forward. It carves through solid stone with patience and persistence. That is how we approach design challenges. We navigate constraints smoothly, flowing around obstacles to create spaces that feel natural and inevitable.
-                    </p>
-                    <p>
-                        Our team works closely with skilled artisans, trusted vendors, and precision manufacturers to ensure that the vision we present in our 3D renders is exactly what is delivered on site. We take the stress out of interior design, allowing our clients to enjoy the creative process while we handle the complex execution.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- VALUES -->
-    <section class="bg-raised py-32 px-[5%]">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-16 reveal text-center md:text-left">
-                <h2 class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-4 fade-up">OUR VALUES</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-copper/10">
-                
-                <!-- 01 -->
-                <div class="p-12 border-b border-r border-copper/10 relative group hover:bg-surface/50 transition-colors duration-500 reveal">
-                    <div class="font-display font-light text-5xl text-teal opacity-20 mb-8 transition-all duration-500 group-hover:text-copper group-hover:opacity-60">01</div>
-                    <div class="fade-up">
-                        <h3 class="font-display font-bold text-2xl text-sand mb-4 group-hover:text-copper-bright transition-colors duration-500">Intentionality</h3>
-                        <p class="font-ui text-[14px] text-sand-dim leading-relaxed">Every material, color, and line is chosen for a specific reason. We design with purpose, not just for aesthetic appeal.</p>
-                    </div>
-                </div>
-
-                <!-- 02 -->
-                <div class="p-12 border-b border-r border-copper/10 relative group hover:bg-surface/50 transition-colors duration-500 reveal" style="transition-delay: 0.1s">
-                    <div class="font-display font-light text-5xl text-teal opacity-20 mb-8 transition-all duration-500 group-hover:text-copper group-hover:opacity-60">02</div>
-                    <div class="fade-up" style="transition-delay: 0.1s">
-                        <h3 class="font-display font-bold text-2xl text-sand mb-4 group-hover:text-copper-bright transition-colors duration-500">Patience</h3>
-                        <p class="font-ui text-[14px] text-sand-dim leading-relaxed">Great design takes time to conceptualize and execute. Like a river carving stone, we are persistent in achieving perfection.</p>
-                    </div>
-                </div>
-
-                <!-- 03 -->
-                <div class="p-12 border-b border-r border-copper/10 relative group hover:bg-surface/50 transition-colors duration-500 reveal" style="transition-delay: 0.2s">
-                    <div class="font-display font-light text-5xl text-teal opacity-20 mb-8 transition-all duration-500 group-hover:text-copper group-hover:opacity-60">03</div>
-                    <div class="fade-up" style="transition-delay: 0.2s">
-                        <h3 class="font-display font-bold text-2xl text-sand mb-4 group-hover:text-copper-bright transition-colors duration-500">Transparency</h3>
-                        <p class="font-ui text-[14px] text-sand-dim leading-relaxed">Clear communication on costs, timelines, and processes. No hidden surprises, just honest collaboration from day one.</p>
-                    </div>
-                </div>
-
-                <!-- 04 -->
-                <div class="p-12 border-b border-r border-copper/10 relative group hover:bg-surface/50 transition-colors duration-500 reveal" style="transition-delay: 0.3s">
-                    <div class="font-display font-light text-5xl text-teal opacity-20 mb-8 transition-all duration-500 group-hover:text-copper group-hover:opacity-60">04</div>
-                    <div class="fade-up" style="transition-delay: 0.3s">
-                        <h3 class="font-display font-bold text-2xl text-sand mb-4 group-hover:text-copper-bright transition-colors duration-500">Functionality</h3>
-                        <p class="font-ui text-[14px] text-sand-dim leading-relaxed">A space must work for the people who use it. We balance stunning aesthetics with ergonomic, practical solutions.</p>
-                    </div>
-                </div>
-
-                <!-- 05 -->
-                <div class="p-12 border-b border-r border-copper/10 relative group hover:bg-surface/50 transition-colors duration-500 reveal" style="transition-delay: 0.4s">
-                    <div class="font-display font-light text-5xl text-teal opacity-20 mb-8 transition-all duration-500 group-hover:text-copper group-hover:opacity-60">05</div>
-                    <div class="fade-up" style="transition-delay: 0.4s">
-                        <h3 class="font-display font-bold text-2xl text-sand mb-4 group-hover:text-copper-bright transition-colors duration-500">Craftsmanship</h3>
-                        <p class="font-ui text-[14px] text-sand-dim leading-relaxed">We partner with the best artisans and use premium materials to ensure our designs are built to last.</p>
-                    </div>
-                </div>
-
-                <!-- 06 -->
-                <div class="p-12 border-b border-r border-copper/10 relative group hover:bg-surface/50 transition-colors duration-500 reveal" style="transition-delay: 0.5s">
-                    <div class="font-display font-light text-5xl text-teal opacity-20 mb-8 transition-all duration-500 group-hover:text-copper group-hover:opacity-60">06</div>
-                    <div class="fade-up" style="transition-delay: 0.5s">
-                        <h3 class="font-display font-bold text-2xl text-sand mb-4 group-hover:text-copper-bright transition-colors duration-500">Empathy</h3>
-                        <p class="font-ui text-[14px] text-sand-dim leading-relaxed">We listen deeply to our clients to translate their vision, habits, and desires into physical environments.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DIVYA FEATURE -->
-    <section class="bg-surface relative w-full flex flex-col md:flex-row overflow-hidden reveal">
-        <div class="w-full md:w-1/2 min-h-[500px]">
-            <img src="assets/ponraj.jpg" alt="Ponraj" class="w-full h-full object-cover border-t-[3px] border-copper mt-8 md:mt-0">
-        </div>
-        <div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
-            <h2 class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-6 fade-up">MEET THE FOUNDER</h2>
-            <h3 class="font-display italic font-bold text-4xl md:text-[52px] text-sand leading-tight mb-8 fade-up" style="transition-delay: 0.1s">"A space is only successful if it improves the life of the person in it."</h3>
-            
-            <p class="font-italic text-[17px] text-sand-dim leading-[1.8] mb-6 fade-up" style="transition-delay: 0.2s">
-                With over a decade of experience in the design industry, Ponraj founded Nithish Interior to bridge the gap between high-end aesthetics and practical livability.
-            </p>
-            <p class="font-italic text-[17px] text-sand-dim leading-[1.8] mb-10 fade-up" style="transition-delay: 0.3s">
-                Her signature style blends warm minimalism with rich, tactile materials—creating spaces that feel sophisticated yet deeply comfortable. As the creative force behind every project, she ensures that the studio's high standards are consistently met, from the initial sketch to the final styling.
-            </p>
-            
-            <img src="https://placehold.co/200x80/152038/C8904A?text=Ponraj+Signature" alt="Ponraj Signature" class="w-48 opacity-70 mix-blend-screen fade-up" style="transition-delay: 0.4s">
-        </div>
-    </section>
-
-    <!-- TEAM CALLOUT -->
-    <section class="bg-deep py-32 px-[5%] text-center reveal">
-        <h2 class="font-italic text-3xl md:text-5xl text-sand mb-6 fade-up">Every project is personal.</h2>
-        <p class="font-ui text-[16px] text-sand-dim max-w-2xl mx-auto fade-up" style="transition-delay: 0.1s">
-            Ponraj personally leads every engagement from first consultation to final handover.
-        </p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <div class="nav-logo-mark mb-6"></div>
-                <div class="font-display font-bold text-2xl text-glow mb-1">NITHISH</div>
-                <div class="font-ui text-[8px] text-sand-muted tracking-[0.6em] mb-4 uppercase">INTERIOR</div>
-                <p class="font-italic text-[13px] text-sand-muted">Crafted with Precision. Built to Last.</p>
-            </div>
-            
-            <div>
-                <div class="footer-label">PAGES</div>
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="work.html" class="footer-link">Work</a>
-                <a href="services.html" class="footer-link">Services</a>
-                <a href="about.html" class="footer-link">About</a>
-                <a href="contact.html" class="footer-link">Contact</a>
-            </div>
-            
-            <div>
-                <div class="footer-label">CONTACT</div>
-                <span class="footer-text">+91 88258 96300</span>
-                <span class="footer-text">27, Periyathottam, Edayarpalayam, Coimbatore</span>
-                <span class="footer-text">Coimbatore, Tamil Nadu</span>
-                <span class="footer-text">Mon-Sat: 10AM - 7PM</span>
-            </div>
-            
-            <div>
-                <div class="footer-label">SOCIAL</div>
-                <a href="#" class="footer-link footer-social">Instagram @riverinteriordesign.in</a>
-                <a href="#" class="footer-link footer-social">Facebook Nithish Interior</a>
-                <a href="#" class="footer-link footer-social">WhatsApp Direct Link</a>
-            </div>
-        </div>
+      </div>
+    </div>
+ 
+    <!-- Story Column -->
+    <div class="lg:col-span-7 reveal">
+      <div class="story-wrapper">
+        <span class="story-subtitle fade-up">Our Philosophy</span>
+        <h3 class="story-lead fade-up" style="transition-delay:0.06s">We build for the second year, not the first photo.</h3>
         
-        <div class="footer-bottom">
-            &copy; 2024 Nithish Interior, Coimbatore. Website by ElevateUX.
+        <div class="story-paragraphs fade-up" style="transition-delay:0.12s">
+          <p>
+            Most interior design studios are judged on handover day. We believe that is too early. Drawer runners fail, cabinets warp, and lighting that looked dramatic in photographs turns out to be unlivable. We engineer every project to hold its structural shape and aesthetic value years down the road.
+          </p>
+          <p>
+            This long-term focus drives how we work. We manufacture modular items in-house because factory-precision machinery cuts panels straight. We employ our own site managers because quality cannot be subcontracted. And we lock handover dates directly in the contract because client trust is our primary asset.
+          </p>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <div class="story-features grid grid-cols-1 sm:grid-cols-2 gap-6 fade-up" style="margin-top:40px;transition-delay:0.18s">
+          <div class="story-feat-card">
+            <div class="sf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h4 class="sf-title">Factory Precision</h4>
+            <p class="sf-desc">All panels are machine-cut and edge-banded to 0.1mm tolerances for clean lines.</p>
+          </div>
+          <div class="story-feat-card">
+            <div class="sf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4 class="sf-title">No Subcontractors</h4>
+            <p class="sf-desc">Our designers, site supervisors, and carpenters are directly employed in-house.</p>
+          </div>
+        </div>
+
+        <div class="story-image-block fade-up" style="margin-top:48px;transition-delay:0.24s">
+          <img src="assets/portfolio/living_ecr.png" alt="Exquisite ECR villa project delivered by Blue Homes" class="story-img">
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+<!-- ─── 02 · VALUES (principle matrix) ───────────────────────── -->
+<section style="background:var(--paper);padding:clamp(72px,10vh,128px) clamp(20px,5vw,64px)">
+  <div style="max-width:1320px;margin:0 auto">
+
+    <div class="reveal" style="max-width:640px;margin-bottom:clamp(40px,5vw,64px)">
+      <div class="titleblock fade-up">
+        <span class="tb-num">02</span><span class="tb-rule"></span><span class="tb-label">How We Work</span>
+      </div>
+      <h2 class="h-sec fade-up" style="transition-delay:0.08s">Six rules we never break.</h2>
+      <p class="lead fade-up" style="margin-top:16px;transition-delay:0.14s">
+        The principles behind every drawing we hand you, and every site we leave behind.
+      </p>
+    </div>
+
+    <div class="rule-matrix reveal">
+      <article class="rule-cell fade-up">
+        <span class="rule-num">01</span>
+        <h3 class="rule-title">Intentionality</h3>
+        <p class="rule-desc">Every material, colour and line has a reason. If we cannot explain why something is in the drawing, it comes out.</p>
+      </article>
+      <article class="rule-cell fade-up" style="transition-delay:0.06s">
+        <span class="rule-num">02</span>
+        <h3 class="rule-title">Transparency</h3>
+        <p class="rule-desc">One fixed quote, itemised. You see what every rupee buys before you commit, and the number does not move after you sign.</p>
+      </article>
+      <article class="rule-cell fade-up" style="transition-delay:0.12s">
+        <span class="rule-num">03</span>
+        <h3 class="rule-title">On-time delivery</h3>
+        <p class="rule-desc">The handover date is written into the agreement. We plan backward from it and hold every milestone to it.</p>
+      </article>
+      <article class="rule-cell fade-up" style="transition-delay:0.06s">
+        <span class="rule-num">04</span>
+        <h3 class="rule-title">Functionality</h3>
+        <p class="rule-desc">A wardrobe that jams is not design. We test layouts against your daily routine before anything is built.</p>
+      </article>
+      <article class="rule-cell fade-up" style="transition-delay:0.12s">
+        <span class="rule-num">05</span>
+        <h3 class="rule-title">Craftsmanship</h3>
+        <p class="rule-desc">Factory precision for the boards, skilled hands for the finish. Materials are chosen to hold their value, not just their look.</p>
+      </article>
+      <article class="rule-cell fade-up" style="transition-delay:0.18s">
+        <span class="rule-num">06</span>
+        <h3 class="rule-title">Empathy</h3>
+        <p class="rule-desc">We design for how your family actually lives: who cooks, who studies where, what gets stored and what gets displayed.</p>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── 03 · PHILOSOPHY (ink) ────────────────────────────────── -->
+<section class="reveal on-dark" style="background:var(--ink);overflow:hidden">
+  <div class="flex flex-col md:flex-row">
+
+    <div class="fade-up" style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:clamp(56px,8vw,104px) clamp(28px,6vw,88px)">
+      <div class="titleblock">
+        <span class="tb-num">03</span><span class="tb-rule"></span><span class="tb-label">The Team</span>
+      </div>
+      <blockquote style="font-family:var(--font-h);font-weight:600;font-size:clamp(24px,2.8vw,38px);letter-spacing:-0.02em;line-height:1.3;color:#FFFFFF;margin-bottom:28px">
+        &ldquo;A home is only complete when the person living in it feels it was made for them.&rdquo;
+      </blockquote>
+      <p class="lead" style="margin-bottom:16px">
+        Our lead designers carry over a decade of residential and commercial work across Chennai. Every engagement is run by the same people from first consultation to final walkthrough; we never hand you off to contractors.
+      </p>
+      <p class="lead" style="margin-bottom:38px">
+        The signature is consistent: clean modern lines, warm livable rooms, and details that still feel right years later.
+      </p>
+      <div>
+        <a href="contact.html" class="btn-brass">Meet Us Over a Site Visit</a>
+      </div>
+    </div>
+
+    <div style="flex:0 0 44%;min-height:440px;position:relative;overflow:hidden">
+      <img src="assets/portfolio/office_omr.png"
+           alt="Collaborative design studio space at Blue Homes tech workspace"
+           style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CTA ──────────────────────────────────────────────────── -->
+<section class="reveal" style="background:var(--paper);padding:clamp(88px,13vh,144px) 6%;text-align:center">
+  <div style="max-width:680px;margin:0 auto">
+    <h2 class="fade-up" style="font-family:var(--font-h);font-weight:800;font-size:clamp(32px,5vw,60px);letter-spacing:-0.03em;line-height:1.05;color:var(--text);margin-bottom:18px">
+      Every project is personal.
+    </h2>
+    <p class="fade-up" style="font-size:17px;color:var(--text-2);margin-bottom:40px;transition-delay:0.1s">
+      Start with a free site visit. We will measure, listen, and show you what your home can become.
+    </p>
+    <div class="fade-up flex flex-col sm:flex-row gap-4 justify-center" style="transition-delay:0.18s">
+      <a href="contact.html" class="btn-solid">Book Free Consultation</a>
+      <a href="work.html" class="link-arrow" style="align-self:center">See the work first <span>&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-word">Blue Homes Interiors<em>.</em></div>
+
+  <div class="footer-grid">
+    <div>
+      <p class="footer-blurb">
+        A Chennai interior studio building homes with factory precision: full 3D previews, fixed quotes, and handover dates we keep.
+      </p>
+      <div class="footer-rating"><b>★★★★★</b> 4.9 · 280+ Google reviews</div>
+    </div>
+    <div>
+      <div class="footer-label">Pages</div>
+      <a href="index.html"    class="footer-link">Home</a>
+      <a href="services.html" class="footer-link">Services</a>
+      <a href="work.html"     class="footer-link">Portfolio</a>
+      <a href="about.html"    class="footer-link">About</a>
+      <a href="contact.html"  class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-label">Services</div>
+      <a href="services.html#kitchens"   class="footer-link">Modular Kitchens</a>
+      <a href="services.html#homes"      class="footer-link">Full Home Interiors</a>
+      <a href="services.html#ceilings"   class="footer-link">False Ceilings</a>
+      <a href="services.html#commercial" class="footer-link">Commercial Spaces</a>
+    </div>
+    <div>
+      <div class="footer-label">Get in Touch</div>
+      <a href="tel:+919677067989"                    class="footer-link">+91 96770 67989</a>
+      <a href="mailto:contact@bluehomesinteriors.in" class="footer-link">contact@bluehomesinteriors.in</a>
+      <span class="footer-text">MGR Nagar, Velachery, Chennai 600042</span>
+      <span class="footer-text">Mon&ndash;Sun · 8:30 AM &ndash; 11:30 PM</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 Blue Homes Interiors. All rights reserved.</span>
+    <span>Serving Velachery · Adyar · Anna Nagar · Tambaram · OMR · Porur · all of Chennai</span>
+  </div>
+</footer>
+
+<!-- ─── WHATSAPP FLOAT ───────────────────────────────────────── -->
+<a href="https://wa.me/919677067989" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="js/main.js"></script>
+<script>
+/* Mobile only: spotlight the rule card nearest the viewport centre,
+   fade the rest. Desktop and reduced-motion are left untouched. */
+(() => {
+  const matrix = document.querySelector('.rule-matrix');
+  if (!matrix) return;
+  const cells = Array.from(matrix.querySelectorAll('.rule-cell'));
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let ticking = false;
+
+  function clear() {
+    matrix.classList.remove('spotlight');
+    cells.forEach(c => c.classList.remove('rc-focus'));
+  }
+
+  function update() {
+    ticking = false;
+    if (window.innerWidth > 640 || reduced) { clear(); return; }
+    matrix.classList.add('spotlight');
+    const mid = window.innerHeight / 2;
+    let best = null, bestDist = Infinity;
+    for (const c of cells) {
+      const r = c.getBoundingClientRect();
+      const dist = Math.abs(r.top + r.height / 2 - mid);
+      if (dist < bestDist) { bestDist = dist; best = c; }
+    }
+    cells.forEach(c => c.classList.toggle('rc-focus', c === best));
+  }
+
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+})();
+</script>
 </body>
 </html>

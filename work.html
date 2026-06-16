@@ -1,226 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work | Nithish Interior</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        deep: '#0D1525',
-                        surface: '#152038',
-                        raised: '#1E2F4D',
-                        elevated: '#2A3F62',
-                        teal: '#6B7BA4',
-                        glow: '#8A9CC4',
-                        shimmer: '#B0BDD8',
-                        sand: '#EDE0BC',
-                        'sand-dim': '#DEBB7A',
-                        'sand-muted': '#A89060',
-                        copper: '#C8904A',
-                        'copper-bright': '#DDA060',
-                        'copper-dim': '#9A6830',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Blue Homes Interiors, Chennai</title>
+  <meta name="description" content="700+ delivered projects across Chennai: modular kitchens, full home interiors, false ceilings and commercial fit-outs. Browse recent handovers by category.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { copper: '#C9952C', ink: '#0D1B26', brand: '#2E7D9E' } } } }
+  </script>
 </head>
-<body class="bg-deep text-sand">
+<body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <div class="nav-logo-mark"></div>
-            <a href="index.html" class="nav-title">NITHISH</a>
-            <div class="nav-subtitle">INTERIOR</div>
-        </div>
-        
-        <div class="nav-center hidden md:flex">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="work.html" class="nav-link active">Work</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-        
-        <div class="nav-right hidden md:flex">
-            <a href="contact.html" class="btn-text-copper">FREE CONSULTATION &rarr;</a>
-        </div>
+<!-- ─── NAV ─────────────────────────────────────────────────── -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 10.5L12 3L21 10.5V20C21 20.55 20.55 21 20 21H15V15.5C15 15.22 14.78 15 14.5 15H9.5C9.22 15 9 15.22 9 15.5V21H4C3.45 21 3 20.55 3 20V10.5Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="nav-brand-words">
+      <span class="nav-brand-name">Blue Homes</span>
+      <span class="nav-brand-sub">Interiors</span>
+    </div>
+  </a>
+  <div class="nav-center hidden md:flex">
+    <a href="index.html"    class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="work.html"     class="nav-link active">Portfolio</a>
+    <a href="about.html"    class="nav-link">About</a>
+    <a href="contact.html"  class="nav-link">Contact</a>
+  </div>
+  <div class="nav-right hidden md:flex">
+    <a href="contact.html" class="btn-text-copper">Book a Consultation</a>
+  </div>
+  <div class="menu-toggle md:hidden"><span></span><span></span><span></span></div>
+</nav>
 
-        <div class="menu-toggle md:hidden">
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link">Home</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="work.html"     class="nav-link active">Portfolio</a>
+  <a href="about.html"    class="nav-link">About</a>
+  <a href="contact.html"  class="nav-link">Contact</a>
+  <a href="contact.html"  class="btn-primary mt-6">Book a Consultation</a>
+</div>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="work.html" class="nav-link active">Work</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+<!-- ─── HERO ─────────────────────────────────────────────────── -->
+<header class="reveal" style="background:var(--paper);padding:calc(72px + clamp(56px,9vh,110px)) clamp(20px,5vw,64px) clamp(36px,5vh,56px)">
+  <div style="max-width:1320px;margin:0 auto">
+    <div class="titleblock fade-up">
+      <span class="tb-num">Portfolio</span><span class="tb-rule"></span><span class="tb-label">Delivered Work</span>
+    </div>
+    <div class="clip-up-text">
+      <h1 class="display">Seven hundred homes,<br>and counting.</h1>
+    </div>
+    <p class="lead fade-up" style="margin-top:26px;transition-delay:0.15s">
+      Every project here was handed over on its committed date. Photographed as delivered, not staged after.
+    </p>
+  </div>
+</header>
+
+<!-- ─── FILTER BAR (sticky) ──────────────────────────────────── -->
+<div style="position:sticky;top:72px;z-index:500;background:rgba(251,252,253,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px clamp(20px,5vw,64px)">
+  <div class="filter-bar" style="max-width:1320px;margin:0 auto">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="residential">Full Home</button>
+    <button class="filter-btn" data-filter="modular">Kitchens</button>
+    <button class="filter-btn" data-filter="ceiling">Ceilings</button>
+    <button class="filter-btn" data-filter="commercial">Commercial</button>
+  </div>
+</div>
+
+<!-- ─── PROJECT GRID ─────────────────────────────────────────── -->
+<section style="background:var(--paper);padding:clamp(44px,6vh,72px) clamp(20px,5vw,64px) clamp(72px,10vh,120px)">
+  <div style="max-width:1320px;margin:0 auto">
+    <div class="work-masonry reveal">
+
+      <!-- PROJECT 1: Velachery Living -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="1">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/living_velachery.png" alt="Living and dining of a completed 3BHK with built-in shelving, Velachery">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Living & Dining</span>
+              <h4 class="wc-hover-title">3BHK Full Interior</h4>
+              <p class="wc-hover-desc">How did we add storage without clutter? We integrated a modular TV console with fluted panelling, secret cable routes, and floating shelves.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">3BHK Full Interior</span><span class="wc-meta">Velachery · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 2: Adyar Kitchen -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="modular" data-id="2">
+        <div class="wc-img-wrapper wide">
+          <img src="assets/portfolio/kitchen_adyar.png" alt="L-shape modular kitchen in white and oak, Adyar">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Modular Kitchen</span>
+              <h4 class="wc-hover-title">L-Shape Kitchen</h4>
+              <p class="wc-hover-desc">How did we maximize corner storage? We installed high-end carousel pull-outs and soft-close tandem boxes under warm oak veneers.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">L-Shape Kitchen</span><span class="wc-meta">Adyar · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 3: Anna Nagar Master Bedroom -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="3">
+        <div class="wc-img-wrapper tall">
+          <img src="assets/portfolio/bedroom_annanagar.png" alt="Master bedroom with velvet panels and brass trim, Anna Nagar">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Master Bedroom</span>
+              <h4 class="wc-hover-title">Master Suite</h4>
+              <p class="wc-hover-desc">How did we create a boutique hotel feel? We designed a floor-to-ceiling beige velvet headboard wall with custom brass metal inlays.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Master Suite</span><span class="wc-meta">Anna Nagar · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 4: Anna Nagar False Ceiling -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="ceiling" data-id="4">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/ceiling_annanagar.png" alt="Tray false ceiling with concealed LED cove lighting, Anna Nagar">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">False Ceiling</span>
+              <h4 class="wc-hover-title">Cove Ceiling</h4>
+              <p class="wc-hover-desc">How did we make the ceiling feel higher? We created a recessed tray design with double-cove warm LED lighting running around the borders.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Cove Ceiling</span><span class="wc-meta">Anna Nagar · 2023</span></div>
+      </a>
+
+      <!-- PROJECT 5: OMR Office -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="commercial" data-id="5">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/office_omr.png" alt="Corporate office with glass partitions and wood paneling, OMR">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Commercial Space</span>
+              <h4 class="wc-hover-title">Corporate Office</h4>
+              <p class="wc-hover-desc">How did we reduce workspace noise? We installed acoustic felt ceiling panels and double-glazed glass partition walls for privacy.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Corporate Office</span><span class="wc-meta">OMR · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 6: T Nagar Island Kitchen -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="modular" data-id="6">
+        <div class="wc-img-wrapper wide">
+          <img src="assets/portfolio/kitchen_tnagar.png" alt="Island kitchen with a breakfast counter and dark grey cabinets, T Nagar">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Modular Kitchen</span>
+              <h4 class="wc-hover-title">Island Kitchen</h4>
+              <p class="wc-hover-desc">How did we create a social cooking space? We installed a central marble-top island with a built-in cooktop, prep sink, and breakfast seating.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Island Kitchen</span><span class="wc-meta">T Nagar · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 7: Tambaram 2BHK Living -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="7">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/living_tambaram.png" alt="2BHK living room with floating shelves and light textures, Tambaram">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Living Room</span>
+              <h4 class="wc-hover-title">2BHK Interior</h4>
+              <p class="wc-hover-desc">How did we make this 2BHK feel spacious? We selected a floating wall console, light linen furniture, and a bright, natural color palette.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">2BHK Interior</span><span class="wc-meta">Tambaram · 2023</span></div>
+      </a>
+
+      <!-- PROJECT 8: T Nagar Cafe Fit-Out -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="commercial" data-id="8">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/cafe_tnagar.png" alt="Cafe interior with teak wood paneling and terrazzo counter, T Nagar">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Commercial Cafe</span>
+              <h4 class="wc-hover-title">Cafe Fit-Out</h4>
+              <p class="wc-hover-desc">How did we craft a cozy neighborhood vibe? We built custom timber wall panels, Terrazzo countertops, and hung warm brass pendant lights.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Cafe Fit-Out</span><span class="wc-meta">T Nagar · 2023</span></div>
+      </a>
+
+      <!-- PROJECT 9: Porur TV Wall + Ceiling -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="ceiling" data-id="9">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/ceiling_porur.png" alt="TV wall and false ceiling with floating shelves, Porur">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">False Ceiling & TV Wall</span>
+              <h4 class="wc-hover-title">TV Wall + Ceiling</h4>
+              <p class="wc-hover-desc">How did we integrate the ceiling and TV wall? We extended the dark oak panels from the media unit directly up onto the ceiling plane.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">TV Wall + Ceiling</span><span class="wc-meta">Porur · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 10: Perungudi Villa Lobby -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="10">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/villa_perungudi.png" alt="Duplex villa entry lobby with wood cladding, Perungudi">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Duplex Villa</span>
+              <h4 class="wc-hover-title">4BHK Villa Lobby</h4>
+              <p class="wc-hover-desc">How did we design this grand entry? We combined a double-height timber door with a glass facade and warm, recessed ambient uplighting.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">4BHK Villa</span><span class="wc-meta">Perungudi · 2023</span></div>
+      </a>
+
+      <!-- PROJECT 11: Nungambakkam Restaurant Interior -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="commercial" data-id="11">
+        <div class="wc-img-wrapper wide">
+          <img src="assets/portfolio/restaurant_nungambakkam.png" alt="Restaurant dining room with velvet booths, Nungambakkam">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Commercial Restaurant</span>
+              <h4 class="wc-hover-title">Restaurant Interior</h4>
+              <p class="wc-hover-desc">How did we control acoustics in a busy dining hall? We installed micro-perforated acoustic ceiling panels and plush velvet booth walls.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Restaurant Interior</span><span class="wc-meta">Nungambakkam · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 12: ECR Double-Height Duplex -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="12">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/living_ecr.png" alt="Double-height living room with teak wood staircase, ECR">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Villa Interior</span>
+              <h4 class="wc-hover-title">Duplex Living</h4>
+              <p class="wc-hover-desc">How did we connect the split levels? We constructed a timber-tread staircase with a structural glass railing and a massive central chandelier.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Duplex Living</span><span class="wc-meta">ECR · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 13: Kilpauk Library Wall -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="13">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/living_kilpauk.png" alt="Living room library bookshelf wall, Kilpauk">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Living Room Custom Work</span>
+              <h4 class="wc-hover-title">Living Room Bookshelf</h4>
+              <p class="wc-hover-desc">How did we display 500+ books without clutter? We built a floor-to-ceiling modular oak bookshelf wall with integrated storage compartments.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Living Room Refresh</span><span class="wc-meta">Kilpauk · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 14: Velachery Parallel Kitchen -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="modular" data-id="14">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/kitchen_velachery.png" alt="Parallel kitchen in dark forest green with marble backslash, Velachery">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Modular Kitchen</span>
+              <h4 class="wc-hover-title">Parallel Kitchen</h4>
+              <p class="wc-hover-desc">How did we achieve an ultra-premium finish? We paired forest green matte acrylic doors with Italian marble slab backsplashes and gold handles.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Parallel Kitchen</span><span class="wc-meta">Velachery · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 15: Medavakkam Bedroom Study -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="15">
+        <div class="wc-img-wrapper tall">
+          <img src="assets/portfolio/bedroom_medavakkam.png" alt="Bedroom with integrated workspace nook, Medavakkam">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Residential Bedroom</span>
+              <h4 class="wc-hover-title">Bedroom + Study</h4>
+              <p class="wc-hover-desc">How did we fit a home office in a bedroom? We built a space-saving floating desk and shelving unit that blends with the wardrobe.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Bedroom + Study</span><span class="wc-meta">Medavakkam · 2023</span></div>
+      </a>
+
+      <!-- PROJECT 16: Pallikaranai Guest Bedroom -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="residential" data-id="16">
+        <div class="wc-img-wrapper">
+          <img src="assets/portfolio/bedroom_pallikaranai.png" alt="Guest bedroom with grey fabric headboard, Pallikaranai">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">Guest Bedroom</span>
+              <h4 class="wc-hover-title">Guest Bedroom</h4>
+              <p class="wc-hover-desc">How did we keep a guest room budget-friendly yet elegant? We used a custom upholstered grey fabric headboard against simple, clean textures.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Guest Bedroom</span><span class="wc-meta">Pallikaranai · 2024</span></div>
+      </a>
+
+      <!-- PROJECT 17: Kodambakkam Lighting Detail -->
+      <a href="javascript:void(0)" class="project-card fade-up" data-category="ceiling" data-id="17">
+        <div class="wc-img-wrapper tall">
+          <img src="assets/portfolio/ceiling_kodambakkam.png" alt="Recessed black magnetic track lighting details, Kodambakkam">
+          <div class="wc-overlay">
+            <div class="wc-overlay-content">
+              <span class="wc-property-type">False Ceiling Detail</span>
+              <h4 class="wc-hover-title">Lighting Detail</h4>
+              <p class="wc-hover-desc">How did we hide lighting fixtures? We installed linear magnetic track lighting channels recessed into the ceiling gypsum board.</p>
+              <span class="wc-action-tag">Click to view project</span>
+            </div>
+          </div>
+        </div>
+        <div class="wc-cap"><span class="wc-name">Lighting Detail</span><span class="wc-meta">Kodambakkam · 2023</span></div>
+      </a>
+
     </div>
 
-    <!-- HERO -->
-    <section class="h-[50vh] bg-surface flex flex-col justify-center items-center text-center mt-[68px]">
-        <div class="reveal">
-            <div class="font-ui text-[13px] text-copper tracking-[0.5em] uppercase mb-4 fade-up">OUR PORTFOLIO</div>
-            <div class="clip-up-text clip-up">
-                <h1 class="font-display font-bold text-[clamp(48px,6vw,80px)] text-sand">Spaces We've Shaped</h1>
-            </div>
-        </div>
-    </section>
+    <p class="reveal" style="margin-top:clamp(40px,6vw,64px);text-align:center">
+      <span class="fade-up" style="display:inline-block;font-size:15px;color:var(--text-2)">
+        A handful of seven hundred. Want to see projects like yours?&nbsp;
+        <a href="contact.html" class="link-arrow">Ask us <span>&rarr;</span></a>
+      </span>
+    </p>
+  </div>
+</section>
 
-    <!-- FILTER BAR -->
-    <div class="sticky top-[68px] z-50 bg-deep/95 backdrop-blur py-4 border-b border-border">
-        <div class="max-w-7xl mx-auto px-[5%] flex flex-wrap justify-center gap-6">
-            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-copper border-b border-copper active pb-1 transition-colors" data-filter="all">All</button>
-            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="residential">Residential</button>
-            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="commercial">Commercial</button>
-            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="restaurant">Restaurant</button>
-            <button class="filter-btn font-ui text-[11px] tracking-[0.2em] uppercase text-sand-dim hover:text-sand pb-1 transition-colors" data-filter="modular">Modular</button>
-        </div>
+<!-- ─── CTA ──────────────────────────────────────────────────── -->
+<section class="reveal on-dark" style="position:relative;overflow:hidden;padding:clamp(88px,14vh,150px) 6%;text-align:center">
+  <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80"
+       alt="Finished bedroom at dusk with warm bedside lighting"
+       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <div style="position:absolute;inset:0;background:rgba(10,16,22,0.82)"></div>
+  <div style="position:relative;z-index:10;max-width:680px;margin:0 auto">
+    <h2 class="fade-up" style="font-family:var(--font-h);font-weight:800;font-size:clamp(32px,5vw,60px);letter-spacing:-0.03em;line-height:1.05;color:#FFFFFF;margin-bottom:18px">
+      Your home could be next.
+    </h2>
+    <p class="fade-up" style="font-size:17px;color:rgba(255,255,255,0.6);margin-bottom:40px;transition-delay:0.1s">
+      A free consultation, a fixed quote, and a handover date we keep.
+    </p>
+    <div class="fade-up flex flex-col sm:flex-row gap-4 justify-center" style="transition-delay:0.18s">
+      <a href="contact.html" class="btn-brass">Book Free Consultation</a>
+      <a href="tel:+919677067989" class="btn-ghost-white">+91 96770 67989</a>
     </div>
+  </div>
+</section>
 
-    <!-- PROJECT GRID -->
-    <section class="py-20 px-[5%]">
-        <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8" id="portfolio-grid">
-            
-            <!-- Project 1 (Large, spans 2 cols) -->
-            <div class="project-card md:col-span-2 relative overflow-hidden group h-[600px] bg-raised transition-all duration-500 origin-center" data-category="residential">
-                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="The Mehta Residence" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Residential</div>
-                    <h3 class="font-display font-bold text-4xl text-sand mb-4">The Mehta Residence</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
+<!-- ─── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-word">Blue Homes Interiors<em>.</em></div>
 
-            <!-- Project 2 (Medium) -->
-            <div class="project-card relative overflow-hidden group h-[500px] bg-raised transition-all duration-500 origin-center" data-category="restaurant">
-                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Brew & Bean Café" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Restaurant</div>
-                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Brew & Bean Café</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
+  <div class="footer-grid">
+    <div>
+      <p class="footer-blurb">
+        A Chennai interior studio building homes with factory precision: full 3D previews, fixed quotes, and handover dates we keep.
+      </p>
+      <div class="footer-rating"><b>★★★★★</b> 4.9 · 280+ Google reviews</div>
+    </div>
+    <div>
+      <div class="footer-label">Pages</div>
+      <a href="index.html"    class="footer-link">Home</a>
+      <a href="services.html" class="footer-link">Services</a>
+      <a href="work.html"     class="footer-link">Portfolio</a>
+      <a href="about.html"    class="footer-link">About</a>
+      <a href="contact.html"  class="footer-link">Contact</a>
+    </div>
+    <div>
+      <div class="footer-label">Services</div>
+      <a href="services.html#kitchens"   class="footer-link">Modular Kitchens</a>
+      <a href="services.html#homes"      class="footer-link">Full Home Interiors</a>
+      <a href="services.html#ceilings"   class="footer-link">False Ceilings</a>
+      <a href="services.html#commercial" class="footer-link">Commercial Spaces</a>
+    </div>
+    <div>
+      <div class="footer-label">Get in Touch</div>
+      <a href="tel:+919677067989"                    class="footer-link">+91 96770 67989</a>
+      <a href="mailto:contact@bluehomesinteriors.in" class="footer-link">contact@bluehomesinteriors.in</a>
+      <span class="footer-text">MGR Nagar, Velachery, Chennai 600042</span>
+      <span class="footer-text">Mon&ndash;Sun · 8:30 AM &ndash; 11:30 PM</span>
+    </div>
+  </div>
 
-            <!-- Project 3 (Small) -->
-            <div class="project-card relative overflow-hidden group h-[400px] md:mt-24 bg-raised transition-all duration-500 origin-center" data-category="commercial">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Nexus Workspace" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Commercial</div>
-                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Nexus Workspace</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Blue Homes Interiors. All rights reserved.</span>
+    <span>Serving Velachery · Adyar · Anna Nagar · Tambaram · OMR · Porur · all of Chennai</span>
+  </div>
+</footer>
 
-            <!-- Project 4 (Medium) -->
-            <div class="project-card relative overflow-hidden group h-[500px] bg-raised transition-all duration-500 origin-center" data-category="modular">
-                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80" alt="The Silva Kitchen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Modular</div>
-                    <h3 class="font-display font-bold text-3xl text-sand mb-4">The Silva Kitchen</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
+<!-- ─── WHATSAPP FLOAT ───────────────────────────────────────── -->
+<a href="https://wa.me/919677067989" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
 
-            <!-- Project 5 (Medium) -->
-            <div class="project-card relative overflow-hidden group h-[500px] md:-mt-24 bg-raised transition-all duration-500 origin-center" data-category="residential">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Green Villa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Residential</div>
-                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Green Villa</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
-
-            <!-- Project 6 (Large, spans 2 cols) -->
-            <div class="project-card md:col-span-2 relative overflow-hidden group h-[600px] bg-raised transition-all duration-500 origin-center" data-category="commercial">
-                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="The Loft Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Commercial</div>
-                    <h3 class="font-display font-bold text-4xl text-sand mb-4">The Loft Office</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
-
-            <!-- Project 7 (Small) -->
-            <div class="project-card relative overflow-hidden group h-[400px] bg-raised transition-all duration-500 origin-center" data-category="restaurant">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Spice Garden" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Restaurant</div>
-                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Spice Garden</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
-
-            <!-- Project 8 (Medium) -->
-            <div class="project-card relative overflow-hidden group h-[500px] bg-raised transition-all duration-500 origin-center" data-category="modular">
-                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=80" alt="Modern Wardrobe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-deep/90 to-transparent group-hover:h-full transition-all duration-500 ease-out flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100">
-                    <div class="font-ui text-[13px] text-copper tracking-[0.4em] uppercase mb-2">Modular</div>
-                    <h3 class="font-display font-bold text-3xl text-sand mb-4">Modern Wardrobe</h3>
-                    <a href="#" class="font-ui text-[11px] text-glow tracking-[0.2em] uppercase">View Details &rarr;</a>
-                </div>
-            </div>
-
+<!-- ─── PORTFOLIO DETAIL MODAL ──────────────────────────────── -->
+<div id="portfolio-modal" class="portfolio-modal-overlay" aria-hidden="true">
+  <div class="portfolio-modal-container">
+    <button id="portfolio-modal-close" class="portfolio-modal-close-btn" aria-label="Close modal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="portfolio-modal-content">
+      <div class="portfolio-modal-img-container">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <div class="portfolio-modal-body">
+        <div class="portfolio-modal-header-info">
+          <span id="modal-tag" class="portfolio-modal-tag">Modular Kitchen</span>
+          <span id="modal-location" class="portfolio-modal-location">Adyar · 2024</span>
         </div>
-    </section>
-
-    <!-- BOTTOM CTA -->
-    <section class="py-24 text-center">
-        <h2 class="font-display italic text-3xl text-sand mb-6">Ready to start your project?</h2>
-        <a href="contact.html" class="font-ui text-xs text-copper tracking-[0.2em] uppercase border-b border-copper pb-1 hover:text-copper-bright hover:border-copper-bright transition-colors">Book a free consultation &rarr;</a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <div class="nav-logo-mark mb-6"></div>
-                <div class="font-display font-bold text-2xl text-glow mb-1">NITHISH</div>
-                <div class="font-ui text-[8px] text-sand-muted tracking-[0.6em] mb-4 uppercase">INTERIOR</div>
-                <p class="font-italic text-[13px] text-sand-muted">Crafted with Precision. Built to Last.</p>
-            </div>
-            
-            <div>
-                <div class="footer-label">PAGES</div>
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="work.html" class="footer-link">Work</a>
-                <a href="services.html" class="footer-link">Services</a>
-                <a href="about.html" class="footer-link">About</a>
-                <a href="contact.html" class="footer-link">Contact</a>
-            </div>
-            
-            <div>
-                <div class="footer-label">CONTACT</div>
-                <span class="footer-text">+91 88258 96300</span>
-                <span class="footer-text">27, Periyathottam, Edayarpalayam, Coimbatore</span>
-                <span class="footer-text">Coimbatore, Tamil Nadu</span>
-                <span class="footer-text">Mon-Sat: 10AM - 7PM</span>
-            </div>
-            
-            <div>
-                <div class="footer-label">SOCIAL</div>
-                <a href="#" class="footer-link footer-social">Instagram @riverinteriordesign.in</a>
-                <a href="#" class="footer-link footer-social">Facebook Nithish Interior</a>
-                <a href="#" class="footer-link footer-social">WhatsApp Direct Link</a>
-            </div>
-        </div>
+        <h3 id="modal-title" class="portfolio-modal-title">L-Shape Kitchen</h3>
         
-        <div class="footer-bottom">
-            &copy; 2024 Nithish Interior, Coimbatore. Website by ElevateUX.
+        <div class="portfolio-modal-divider"></div>
+        
+        <div class="portfolio-modal-description-grid">
+          <div>
+            <h4 class="portfolio-modal-section-title">Project Walkthrough</h4>
+            <p id="modal-description" class="portfolio-modal-description-text"></p>
+          </div>
+          <div>
+            <h4 class="portfolio-modal-section-title">Design Specifications</h4>
+            <div id="modal-specs" class="portfolio-modal-specs-list">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
